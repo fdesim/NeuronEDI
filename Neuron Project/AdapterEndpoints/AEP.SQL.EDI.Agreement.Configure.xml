@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>012a8c27-f6df-44a6-bd75-92a8455862b2</Id>
+  <Version>ce4a573f-9371-4142-b616-cc30e1e30c6d</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>AEP.SQL.EDI.Agreement.Configure</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <Bindings />
+  <FarmSingleInstance>false</FarmSingleInstance>
+  <Enabled>true</Enabled>
+  <Zone>Enterprise</Zone>
+  <IncludeMetadata>true</IncludeMetadata>
+  <AdapterName>SQL</AdapterName>
+  <AdapterMode>Execute</AdapterMode>
+  <Properties>
+    <NameValuePair>
+      <Name>ConnectionString</Name>
+      <Value>l7eJyeIO1ORT6yerTT+HD3g3M8/AuX5nkR3V9bsWPt3RdpW1i7Sd6rQyvWjCZHj9CDZSADAgaJdNfCRJnEcifjVEWvQyCzMr3hOn26Qlbig=</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>Transacted</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>IsolationLevelString</Name>
+      <Value>Serializable</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>CommandTimeout</Name>
+      <Value>30</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>SendTopic</Name>
+      <Value />
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ForXml</Name>
+      <Value>False</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>PollingInterval</Name>
+      <Value>10</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>BatchSize</Name>
+      <Value>1</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>StoredProcedure</Name>
+      <Value>queryProc</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>UseStoreProcedure</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>DatabaseTable</Name>
+      <Value>SqlAdapter</Value>
+    </NameValuePair>
+  </Properties>
+  <AdapterBindings />
+  <PartyId>Pub.X12.Agreement.Configure</PartyId>
+  <RunAs />
+  <AdapterPolicy>Default</AdapterPolicy>
+</ESBEndpoint>

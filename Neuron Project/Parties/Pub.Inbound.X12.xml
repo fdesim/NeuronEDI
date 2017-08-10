@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>87bc14f9-29fe-4fa0-94ed-e57f2aa8aff4</Id>
+  <Version>e9ba8646-80ca-4bfe-aa7e-762a5f549d47</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Pub.Inbound.X12</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <Bindings />
+  <isAllowMultipleInstances>true</isAllowMultipleInstances>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+  <SubscriberId>Pub.Inbound.X12</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>X12.Inbound</TopicName>
+      <CanRead>true</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>a6c2620d-065c-40c0-abf1-b37f07e213da</Id>
+      <Version>989d6c3b-d3ab-48bf-b5e2-09e8e479a867</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>Process.Inbound.X12</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>2ec2098c-7ce8-4048-bbb2-09248930859a</Id>
+        <Version>bed24267-7fcd-48ab-afed-ef68332eca86</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <Condition />
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <LogActivity>false</LogActivity>
+  <LogSession>true</LogSession>
+</ESBSubscriber>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>de3bcac4-6f53-4186-8d10-7c9020c32303</Id>
+  <Version>edacee93-3d17-41c9-8631-c7371a420e11</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>ABC123.BCD234.00401.856.Map</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+</NeuronVariable>

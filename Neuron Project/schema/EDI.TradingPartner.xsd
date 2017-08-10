@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-16" ?> 
+<xs:schema elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Partner">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Action">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Create" /> 
+							<xs:enumeration value="Update" /> 
+							<xs:enumeration value="Activate" /> 
+							<xs:enumeration value="Deactivate" /> 
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element minOccurs="0" name="PartnerID">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="36" /> 
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PartnerName">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="100" /> 
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="InterchangeIDQualifier">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="01" /> 
+							<xs:enumeration value="02" /> 
+							<xs:enumeration value="03" /> 
+							<xs:enumeration value="04" /> 
+							<xs:enumeration value="07" /> 
+							<xs:enumeration value="08" /> 
+							<xs:enumeration value="09" /> 
+							<xs:enumeration value="10" /> 
+							<xs:enumeration value="11" /> 
+							<xs:enumeration value="12" /> 
+							<xs:enumeration value="13" /> 
+							<xs:enumeration value="14" /> 
+							<xs:enumeration value="15" /> 
+							<xs:enumeration value="16" /> 
+							<xs:enumeration value="17" /> 
+							<xs:enumeration value="18" /> 
+							<xs:enumeration value="19" /> 
+							<xs:enumeration value="20" /> 
+							<xs:enumeration value="21" /> 
+							<xs:enumeration value="22" /> 
+							<xs:enumeration value="23" /> 
+							<xs:enumeration value="24" /> 
+							<xs:enumeration value="25" /> 
+							<xs:enumeration value="26" /> 
+							<xs:enumeration value="27" /> 
+							<xs:enumeration value="28" /> 
+							<xs:enumeration value="29" /> 
+							<xs:enumeration value="30" /> 
+							<xs:enumeration value="31" /> 
+							<xs:enumeration value="32" /> 
+							<xs:enumeration value="33" /> 
+							<xs:enumeration value="34" /> 
+							<xs:enumeration value="35" /> 
+							<xs:enumeration value="36" /> 
+							<xs:enumeration value="37" /> 
+							<xs:enumeration value="38" /> 
+							<xs:enumeration value="AM" /> 
+							<xs:enumeration value="NR" /> 
+							<xs:enumeration value="SA" /> 
+							<xs:enumeration value="SN" /> 
+							<xs:enumeration value="ZZ" /> 
+							<xs:enumeration value="BT" /> 
+							<xs:minLength value="2" /> 
+							<xs:maxLength value="2" /> 
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="InterchangeID">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="15" /> 
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Activated" type="xs:boolean" /> 
+				<xs:element minOccurs="0" name="FunctionalGroups">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="1000000" name="FunctionalGroup">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="0" name="GroupID" > 
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="36" /> 
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="GroupName" > 
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="100" /> 
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="FunctionalGroupID">
+											<xs:simpleType>
+												<xs:restriction base="xs:string">
+													<xs:maxLength value="15" /> 
+												</xs:restriction>
+											</xs:simpleType>
+										</xs:element>
+										<xs:element name="Activated" type="xs:boolean" /> 
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

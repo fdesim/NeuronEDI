@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>12d8737f-536e-4266-bb30-658419327048</Id>
+  <Version>960ce882-07e7-4530-893d-d2f0b30953cd</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>AEP.SQL.EDI.InterchangeControlNumber.Get</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <Bindings />
+  <FarmSingleInstance>false</FarmSingleInstance>
+  <Enabled>true</Enabled>
+  <Zone>Enterprise</Zone>
+  <IncludeMetadata>true</IncludeMetadata>
+  <AdapterName>SQL</AdapterName>
+  <AdapterMode>Query</AdapterMode>
+  <Properties>
+    <NameValuePair>
+      <Name>ConnectionString</Name>
+      <Value>l7eJyeIO1ORT6yerTT+HD3g3M8/AuX5nkR3V9bsWPt3RdpW1i7Sd6rQyvWjCZHj9CDZSADAgaJdNfCRJnEcifjVEWvQyCzMr3hOn26Qlbig=</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>Transacted</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>IsolationLevelString</Name>
+      <Value>Serializable</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>CommandTimeout</Name>
+      <Value>30</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>SendTopic</Name>
+      <Value>X12.Outbound</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ForXml</Name>
+      <Value>False</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>PollingInterval</Name>
+      <Value>10</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>BatchSize</Name>
+      <Value>1</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>StoredProcedure</Name>
+      <Value>sp_ControlNumber_Get</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>UseStoreProcedure</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>DatabaseTable</Name>
+      <Value>SqlAdapter</Value>
+    </NameValuePair>
+  </Properties>
+  <AdapterBindings />
+  <PartyId>Pub.Outbound.X12</PartyId>
+  <RunAs />
+  <AdapterPolicy>Default</AdapterPolicy>
+</ESBEndpoint>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>4bb0b899-da58-470e-bbfa-652600869caf</Id>
+  <Version>92a3586f-7d6a-4f9c-8489-a198283e48d5</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>AEP.SQL.EDI.Agreement.Get</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <Bindings />
+  <FarmSingleInstance>false</FarmSingleInstance>
+  <Enabled>true</Enabled>
+  <Zone>Enterprise</Zone>
+  <IncludeMetadata>true</IncludeMetadata>
+  <AdapterName>SQL</AdapterName>
+  <AdapterMode>Query</AdapterMode>
+  <Properties>
+    <NameValuePair>
+      <Name>ConnectionString</Name>
+      <Value>l7eJyeIO1ORT6yerTT+HD3g3M8/AuX5nkR3V9bsWPt3RdpW1i7Sd6rQyvWjCZHj9CDZSADAgaJdNfCRJnEcifjVEWvQyCzMr3hOn26Qlbig=</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>Transacted</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>IsolationLevelString</Name>
+      <Value>Serializable</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>CommandTimeout</Name>
+      <Value>30</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>SendTopic</Name>
+      <Value>EDI.Inbound</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ForXml</Name>
+      <Value>False</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>PollingInterval</Name>
+      <Value>10</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>BatchSize</Name>
+      <Value>1</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>StoredProcedure</Name>
+      <Value>sp_Agreement_Get</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>UseStoreProcedure</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>DatabaseTable</Name>
+      <Value>Agreement</Value>
+    </NameValuePair>
+  </Properties>
+  <AdapterBindings />
+  <PartyId>Pub.Inbound.X12</PartyId>
+  <RunAs />
+  <AdapterPolicy>Default</AdapterPolicy>
+</ESBEndpoint>

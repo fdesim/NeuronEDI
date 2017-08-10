@@ -1,0 +1,451 @@
+﻿<Transaction ControlNumber="0001">
+	<ST>
+        <!--Transaction Set Identifier Code-->
+        <ST01>837<!--Health Care Claim--></ST01>
+        <!--Transaction Set Control Number-->
+        <ST02>0001</ST02>
+        <ST03>004010X222</ST03>
+      </ST>
+	<BHT>
+		<!--Hierarchical Structure Code-->
+		<BHT01>0019</BHT01>
+		<!--Transaction Set Purpose Code-->
+		<BHT02>00</BHT02>
+		<!--Reference Identification-->
+		<BHT03>565743</BHT03>
+		<!--Date-->
+		<BHT04>20110523</BHT04>
+		<!--Time-->
+		<BHT05>154959</BHT05>
+		<!--Transaction Type Code-->
+		<BHT06>CH
+			<!--Chargeable--></BHT06>
+	</BHT>
+	<Loop LoopId="1000A" Name="SUBMITTER NAME">
+		<NM1>
+			<!--Entity Identifier Code-->
+			<NM101>41
+				<!--Submitter--></NM101>
+			<!--Entity Type Qualifier-->
+			<NM102>2
+				<!--Non-Person Entity--></NM102>
+			<!--Name Last or Organization Name-->
+			<NM103>SAMPLE INC</NM103>
+			<NM104 />
+			<NM105 />
+			<NM106 />
+			<NM107 />
+			<!--Identification Code Qualifier-->
+			<NM108>46
+				<!--Electronic Transmitter Identification Number (ETIN)--></NM108>
+			<!--Identification Code-->
+			<NM109>496103</NM109>
+		</NM1>
+		<PER>
+			<!--Contact Function Code-->
+			<PER01>IC
+				<!--Information Contact--></PER01>
+			<!--Name-->
+			<PER02>EDI DEPT</PER02>
+			<!--Communication Number Qualifier-->
+			<PER03>EM
+				<!--Electronic Mail--></PER03>
+			<!--Communication Number-->
+			<PER04>FEEDBACK@1EDISOURCE.COM</PER04>
+			<!--Communication Number Qualifier-->
+			<PER05>TE
+				<!--Telephone--></PER05>
+			<!--Communication Number-->
+			<PER06>3305551212</PER06>
+		</PER>
+	</Loop>
+	<Loop LoopId="1000B" Name="RECEIVER NAME">
+		<NM1>
+			<!--Entity Identifier Code-->
+			<NM101>40
+				<!--Receiver--></NM101>
+			<!--Entity Type Qualifier-->
+			<NM102>2
+				<!--Non-Person Entity--></NM102>
+			<!--Name Last or Organization Name-->
+			<NM103>PPO BLUE</NM103>
+			<NM104 />
+			<NM105 />
+			<NM106 />
+			<NM107 />
+			<!--Identification Code Qualifier-->
+			<NM108>46
+				<!--Electronic Transmitter Identification Number (ETIN)--></NM108>
+			<!--Identification Code-->
+			<NM109>54771</NM109>
+		</NM1>
+	</Loop>
+	<HierarchicalLoop LoopId="2000A" LoopName="BILLING/PAY-TO PROVIDER HIERARCHICAL LEVEL" Id="1" ParentId="">
+		<HL>
+			<!--Hierarchical ID Number-->
+			<HL01>1</HL01>
+			<HL02 />
+			<!--Level Code-->
+			<HL03>20
+				<!--Information Source--></HL03>
+			<!--Hierarchical Child Code-->
+			<HL04>1
+				<!--Additional Subordinate HL Data Segment in This Hierarchical Structure--></HL04>
+		</HL>
+		<PRV>
+			<!--Provider Code-->
+			<PRV01>BI
+				<!--Billing--></PRV01>
+			<!--Reference Identification Qualifier-->
+			<PRV02>PXC
+				<!--Health Care Provider Taxonomy Code--></PRV02>
+			<!--Reference Identification-->
+			<PRV03>333600000X</PRV03>
+		</PRV>
+		<Loop LoopId="2010AA" Name="BILLING PROVIDER NAME">
+			<NM1>
+				<!--Entity Identifier Code-->
+				<NM101>85
+					<!--Billing Provider--></NM101>
+				<!--Entity Type Qualifier-->
+				<NM102>2
+					<!--Non-Person Entity--></NM102>
+				<!--Name Last or Organization Name-->
+				<NM103>EDI SPECIALTY SAMPLE</NM103>
+				<NM104 />
+				<NM105 />
+				<NM106 />
+				<NM107 />
+				<!--Identification Code Qualifier-->
+				<NM108>XX
+					<!--Centers for Medicare and Medicaid Services National Provider Identifier--></NM108>
+				<!--Identification Code-->
+				<NM109>123456789</NM109>
+			</NM1>
+			<N3>
+				<!--Address Information-->
+				<N301>1212 DEPOT DRIVE</N301>
+			</N3>
+			<N4>
+				<!--City Name-->
+				<N401>CHICAGO</N401>
+				<!--State or Provice Code-->
+				<N402>IL</N402>
+				<!--Postal Code-->
+				<N403>606930159</N403>
+			</N4>
+			<REF>
+				<!--Reference Identification Qualifier-->
+				<REF01>EI
+					<!--Employer’s Identification Number--></REF01>
+				<!--Reference Identification-->
+				<REF02>300123456</REF02>
+			</REF>
+		</Loop>
+		<HierarchicalLoop LoopId="2000B" LoopName="SUBSCRIBER HIERARCHICAL LOOP" Id="2" ParentId="1">
+			<HL>
+				<!--Hierarchical ID Number-->
+				<HL01>2</HL01>
+				<!--Hierarchical Parent ID Number-->
+				<HL02>1</HL02>
+				<!--Level Code-->
+				<HL03>22
+					<!--Subscriber--></HL03>
+				<!--Hierarchical Child Code-->
+				<HL04>1
+					<!--Additional Subordinate HL Data Segment in This Hierarchical Structure--></HL04>
+			</HL>
+			<SBR>
+				<!--Payer Responsibility Sequence Number Code-->
+				<SBR01>P
+					<!--Primary--></SBR01>
+				<SBR02 />
+				<SBR03 />
+				<SBR04 />
+				<SBR05 />
+				<SBR06 />
+				<SBR07 />
+				<SBR08 />
+				<!--Claim Filing Indicator Code-->
+				<SBR09>BL
+					<!--Blue Cross/Blue Shield--></SBR09>
+			</SBR>
+			<Loop LoopId="2010BA" Name="SUBSCRIBER NAME">
+				<NM1>
+					<!--Entity Identifier Code-->
+					<NM101>IL
+						<!--Insured or Subscriber--></NM101>
+					<!--Entity Type Qualifier-->
+					<NM102>1
+						<!--Person--></NM102>
+					<!--Name Last or Organization Name-->
+					<NM103>CUSTOMER</NM103>
+					<!--Name First-->
+					<NM104>KAREN</NM104>
+					<NM105 />
+					<NM106 />
+					<NM107 />
+					<!--Identification Code Qualifier-->
+					<NM108>MI
+						<!--Member Identification Number--></NM108>
+					<!--Identification Code-->
+					<NM109>YYX123456789</NM109>
+				</NM1>
+				<N3>
+					<!--Address Information-->
+					<N301>228 PINEAPPLE CIRCLE</N301>
+				</N3>
+				<N4>
+					<!--City Name-->
+					<N401>CORA</N401>
+					<!--State or Provice Code-->
+					<N402>PA</N402>
+					<!--Postal Code-->
+					<N403>15108</N403>
+				</N4>
+				<DMG>
+					<!--Date Time Period Format Qualifier-->
+					<DMG01>D8
+						<!--Date Expressed in Format CCYYMMDD--></DMG01>
+					<!--Date Time Period-->
+					<DMG02>19630625</DMG02>
+					<!--Gender Code-->
+					<DMG03>M
+						<!--Male--></DMG03>
+				</DMG>
+			</Loop>
+			<Loop LoopId="2010BB" Name="PAYER NAME">
+				<NM1>
+					<!--Entity Identifier Code-->
+					<NM101>PR
+						<!--Payer--></NM101>
+					<!--Entity Type Qualifier-->
+					<NM102>2
+						<!--Non-Person Entity--></NM102>
+					<!--Name Last or Organization Name-->
+					<NM103>PPO BLUE</NM103>
+					<NM104 />
+					<NM105 />
+					<NM106 />
+					<NM107 />
+					<!--Identification Code Qualifier-->
+					<NM108>PI
+						<!--Payor Identification--></NM108>
+					<!--Identification Code-->
+					<NM109>54771</NM109>
+				</NM1>
+				<N3>
+					<!--Address Information-->
+					<N301>PO BOX 12345</N301>
+				</N3>
+				<N4>
+					<!--City Name-->
+					<N401>CAMP HILL</N401>
+					<!--State or Provice Code-->
+					<N402>PA</N402>
+					<!--Postal Code-->
+					<N403>17089</N403>
+				</N4>
+			</Loop>
+			<HierarchicalLoop LoopId="2000C" LoopName="PATIENT HIERARCHICAL LOOP" Id="3" ParentId="2">
+				<HL>
+					<!--Hierarchical ID Number-->
+					<HL01>3</HL01>
+					<!--Hierarchical Parent ID Number-->
+					<HL02>2</HL02>
+					<!--Level Code-->
+					<HL03>23
+						<!--Dependent--></HL03>
+					<!--Hierarchical Child Code-->
+					<HL04>0
+						<!--No Subordinate HL Segment in This Hiearchical Structure--></HL04>
+				</HL>
+				<PAT>
+					<!--Individual Relationship Code-->
+					<PAT01>19
+						<!--Child--></PAT01>
+				</PAT>
+				<Loop LoopId="2010CA" Name="PATIENT NAME">
+					<NM1>
+						<!--Entity Identifier Code-->
+						<NM101>QC
+							<!--Patient--></NM101>
+						<!--Entity Type Qualifier-->
+						<NM102>1
+							<!--Person--></NM102>
+						<!--Name Last or Organization Name-->
+						<NM103>CUSTOMER</NM103>
+						<!--Name First-->
+						<NM104>COLE</NM104>
+					</NM1>
+					<N3>
+						<!--Address Information-->
+						<N301>228 PINEAPPLE CIRCLE</N301>
+					</N3>
+					<N4>
+						<!--City Name-->
+						<N401>CORA</N401>
+						<!--State or Provice Code-->
+						<N402>PA</N402>
+						<!--Postal Code-->
+						<N403>15108</N403>
+					</N4>
+					<DMG>
+						<!--Date Time Period Format Qualifier-->
+						<DMG01>D8
+							<!--Date Expressed in Format CCYYMMDD--></DMG01>
+						<!--Date Time Period-->
+						<DMG02>19940921</DMG02>
+						<!--Gender Code-->
+						<DMG03>M
+							<!--Male--></DMG03>
+					</DMG>
+				</Loop>
+				<Loop LoopId="2300" Name="CLAIM INFORMATION">
+					<CLM>
+						<!--Patient Account Number-->
+						<CLM01>945405</CLM01>
+						<!--Total Claim Charge Amount-->
+						<CLM02>5332.54</CLM02>
+						<CLM03 />
+						<CLM04 />
+						<!--Place of Service Code-->
+						<CLM05>
+							<CLM0501>12
+								<!--Home--></CLM0501>
+							<CLM0502>B</CLM0502>
+							<CLM0503>1</CLM0503>
+						</CLM05>
+						<!--Provider or Supplier Signature Indicator-->
+						<CLM06>Y
+							<!--Yes--></CLM06>
+						<!--Provider Accept Assignment Code-->
+						<CLM07>A
+							<!--Assigned--></CLM07>
+						<!--Benefits Assignment Certification Indicator-->
+						<CLM08>Y
+							<!--Yes--></CLM08>
+						<!--Release of Information Code-->
+						<CLM09>Y</CLM09>
+						<!--Patient Signature Source Code-->
+						<CLM10>P
+							<!--Signature generated by provider because the patient was not physically present for services--></CLM10>
+					</CLM>
+					<HI>
+						<!--Health Care Code Information-->
+						<HI01>
+							<HI0101>BK
+								<!--Principal Diagnosis (ICD-9)--></HI0101>
+							<HI0102>2533</HI0102>
+						</HI01>
+					</HI>
+					<Loop LoopId="2400" Name="SERVICE LINE">
+						<LX>
+							<!--Assigned Number-->
+							<LX01>1</LX01>
+						</LX>
+						<SV1>
+							<!--Composite Medical Procedure Identifier-->
+							<SV101>
+								<SV10101>HC
+									<!--Health Care Financing Administration Common Procedural Coding System (HCPCS) Codes--></SV10101>
+								<SV10102>J2941</SV10102>
+							</SV101>
+							<!--Line Item Charge Amount-->
+							<SV102>5332.54</SV102>
+							<!--Unit or Basis for Measurement-->
+							<SV103>UN
+								<!--Unit--></SV103>
+							<!--Service Unit Count-->
+							<SV104>84</SV104>
+							<SV105 />
+							<SV106 />
+							<!--COMPOSITE DIAGNOSIS CODE POINTER-->
+							<SV107>1</SV107>
+						</SV1>
+						<DTP>
+							<!--Data/Time Qualifier-->
+							<DTP01>472
+								<!--Service--></DTP01>
+							<!--Date Time Period Format Qualifier-->
+							<DTP02>RD8</DTP02>
+							<!--Date Time Period-->
+							<DTP03>20110511-20110511</DTP03>
+						</DTP>
+						<REF>
+							<!--Reference Identification Qualifier-->
+							<REF01>6R
+								<!--Provider Control Number--></REF01>
+							<!--Reference Identification-->
+							<REF02>1099999731</REF02>
+						</REF>
+						<NTE>
+							<NTE01>ADD</NTE01>
+							<NTE02>GENERIC 12MG CARTRIDGE</NTE02>
+						</NTE>
+						<Loop LoopId="2410" Name="DRUG IDENTIFICATION">
+							<LIN>
+								<LIN01 />
+								<!--Product/Service ID Quailifier-->
+								<LIN02>N4</LIN02>
+								<!--Product/Service ID-->
+								<LIN03>00013264681</LIN03>
+							</LIN>
+							<CTP>
+								<CTP01 />
+								<CTP02 />
+								<CTP03 />
+								<!--Quantity-->
+								<CTP04>7</CTP04>
+								<!--Composite Unit of Measure-->
+								<CTP05>UN</CTP05>
+							</CTP>
+						</Loop>
+						<Loop LoopId="2420E" Name="ORDERING PROVIDER NAME">
+							<NM1>
+								<!--Entity Identifier Code-->
+								<NM101>DK
+									<!--Ordering Physician--></NM101>
+								<!--Entity Type Qualifier-->
+								<NM102>1
+									<!--Person--></NM102>
+								<!--Name Last or Organization Name-->
+								<NM103>PATIENT</NM103>
+								<!--Name First-->
+								<NM104>DEBORAH</NM104>
+								<NM105 />
+								<NM106 />
+								<NM107 />
+								<!--Identification Code Qualifier-->
+								<NM108>XX
+									<!--Centers for Medicare and Medicaid Services National Provider Identifier--></NM108>
+								<!--Identification Code-->
+								<NM109>12345679030</NM109>
+							</NM1>
+							<N3>
+								<!--Address Information-->
+								<N301>123 MAIN ST</N301>
+								<!--Address Information-->
+								<N302>APT B</N302>
+							</N3>
+							<N4>
+								<!--City Name-->
+								<N401>PITTSBURGH</N401>
+								<!--State or Provice Code-->
+								<N402>PA</N402>
+								<!--Postal Code-->
+								<N403>152181871</N403>
+							</N4>
+						</Loop>
+					</Loop>
+				</Loop>
+			</HierarchicalLoop>
+		</HierarchicalLoop>
+	</HierarchicalLoop>
+	<SE>
+		<!--Number of Included Segments-->
+		<SE01>39</SE01>
+		<!--Transaction Set Control Number-->
+		<SE02>0001</SE02>
+	</SE>
+</Transaction>

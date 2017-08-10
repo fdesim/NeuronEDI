@@ -1,0 +1,17 @@
+﻿<Partners>
+  <Partner>
+    <Action>Create</Action>
+    <PartnerID></PartnerID>
+    <Name>United Healthcare</Name>
+    <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+    <InterchangeID>UHC938841633927</InterchangeID>
+    <Activated>0</Activated>
+    <FunctionalGroups>
+      <FunctionalGroup>
+        <Action>Create</Action>
+        <FunctionalGroupID>UHC938841633927</FunctionalGroupID>
+        <Activated>0</Activated>
+      </FunctionalGroup>
+    </FunctionalGroups>
+  </Partner>
+</Partners>

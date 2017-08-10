@@ -1,0 +1,13 @@
+<tpAgreements xmlns:tpa="http://neuron.edi.tpa">
+	<Agreement>
+		<Action>delete</Action>	
+		<Sender>
+			<SenderId>ABC123</SenderId>
+		</Sender>
+		<Receiver>
+		  <ReceiverId>DEF456</ReceiverId>
+		</Receiver>
+		<TransactionType>856</TransactionType>
+		<Version>00401</Version>
+	</Agreement>
+</tpAgreements>

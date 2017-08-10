@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>17e49685-4a37-4cfc-9a55-bd2ea11c2a06</Id>
+  <Version>2d571efb-1b76-4938-a88c-32cf90264b3f</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Pub.X12.Partner.Configure</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <Bindings />
+  <isAllowMultipleInstances>true</isAllowMultipleInstances>
+  <UseUniqueWmiCounterName>false</UseUniqueWmiCounterName>
+  <SubscriberId>Pub.X12.Partner.Configure</SubscriberId>
+  <ClientGroup>General</ClientGroup>
+  <Zone>Enterprise</Zone>
+  <Enabled>true</Enabled>
+  <ACL />
+  <Anonymous>true</Anonymous>
+  <Subscriptions>
+    <Subscription>
+      <TopicName>X12.Partner.Configure</TopicName>
+      <CanRead>false</CanRead>
+      <CanWrite>true</CanWrite>
+      <SubscriptionType>Topic</SubscriptionType>
+    </Subscription>
+  </Subscriptions>
+  <MessagePipelines>
+    <ClientPipelineItem>
+      <Id>a73e976a-7982-4209-98ea-09e2a57c0607</Id>
+      <Version>81bcecfd-4450-4093-8916-c2a6c8513564</Version>
+      <BusinessFlows />
+      <Description />
+      <Name>Process.EDI.Partner.Configure</Name>
+      <IsSystemObject>false</IsSystemObject>
+      <ApplyOnPublish>true</ApplyOnPublish>
+      <ApplyOnReceive>false</ApplyOnReceive>
+      <PipelineConditions>
+        <Id>78953224-7bdb-4345-a1e1-f6aa0b8626f2</Id>
+        <Version>bf3c780f-5b0e-405b-9336-6e53c641f854</Version>
+        <BusinessFlows />
+        <Description />
+        <IsSystemObject>false</IsSystemObject>
+        <Condition />
+      </PipelineConditions>
+    </ClientPipelineItem>
+  </MessagePipelines>
+  <AllowMultipleInstances>true</AllowMultipleInstances>
+  <LogActivity>false</LogActivity>
+  <LogSession>true</LogSession>
+</ESBSubscriber>

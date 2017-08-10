@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>593</Version>
+  <EnvironmentName>Neuron EDI</EnvironmentName>
+  <NeuronBuildVersion>3.5.4.1119</NeuronBuildVersion>
+  <ZoneName>Enterprise</ZoneName>
+  <ChangeList>
+    <Additions />
+    <Revisions>
+      <string>Edit,*,pipeline,Process.Outbound.X12</string>
+    </Revisions>
+    <Deletions />
+    <LastModifiedBy />
+    <LastModifiedDate>2017-08-10T16:07:54.0134434Z</LastModifiedDate>
+    <Comments />
+  </ChangeList>
+  <NeuronEnvironmentVariables />
+  <ProcessFolders />
+  <InstanceName />
+  <Zones />
+  <Topics />
+  <Subscribers />
+  <Services />
+  <WorkflowDefinitions />
+  <WorkflowHosts />
+  <AvailabilityGroups />
+  <OAuthProviders />
+  <ESBMessagePipelines />
+  <Schemas>
+    <item>
+      <key>
+        <string>EDI.Agreement</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>e5fcf6d2-7fd8-4183-9393-8e488724cc2e</Id>
+          <Version>fafca93e-c09c-4f14-b698-decec3846c66</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>EDI.Agreement</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ServiceAddress />
+          <SchemaVersion />
+          <SourceUri />
+          <TargetNamespace />
+          <ShortName>EDI.Agreement</ShortName>
+          <Xsd />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>EDI.TradingPartner</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>1d961899-5a75-45a1-8ad2-b091189e492e</Id>
+          <Version>aa3ec781-bf17-4408-b0bc-d6cea5269a23</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>EDI.TradingPartner</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ServiceAddress />
+          <SchemaVersion />
+          <SourceUri />
+          <TargetNamespace />
+          <ShortName>EDI.TradingPartner</ShortName>
+          <Xsd />
+        </ESBSchema>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Claims</string>
+      </key>
+      <value>
+        <ESBSchema>
+          <Id>21ab915c-04af-4932-84bf-29c3e7fa20c2</Id>
+          <Version>8c465b5e-042f-468a-811d-33e771f94005</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>Claims</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <FullName>http://tempuri.org/Schema1</FullName>
+          <ValidateWithService>false</ValidateWithService>
+          <Storing>false</Storing>
+          <ServiceAddress />
+          <SchemaVersion />
+          <SourceUri />
+          <TargetNamespace />
+          <ShortName>Claims</ShortName>
+          <Xsd />
+        </ESBSchema>
+      </value>
+    </item>
+  </Schemas>
+  <XmlDocs />
+  <TextDocs>
+    <item>
+      <key>
+        <string>856test</string>
+      </key>
+      <value>
+        <ESBTextDoc>
+          <Id>14705543-cc26-4490-87b8-c08f58d780fd</Id>
+          <Version>958ee2ab-9f2c-4d10-916d-2faaf9726370</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>856test</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <TextVersion />
+          <SourceUri />
+          <Storing>false</Storing>
+          <Text />
+        </ESBTextDoc>
+      </value>
+    </item>
+  </TextDocs>
+  <JsonDocs>
+    <item>
+      <key>
+        <string>JsonSchema</string>
+      </key>
+      <value>
+        <ESBJsonDoc>
+          <Id>ba9536b7-2f75-4e20-adbb-4bf8e18c5f0a</Id>
+          <Version>7e23f117-bbaf-4bb3-94bb-717fbaf3197f</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>JsonSchema</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <JsonVersion />
+          <SourceUri />
+          <Storing>false</Storing>
+          <HttpMethods />
+          <JsonFormatString />
+          <Text />
+        </ESBJsonDoc>
+      </value>
+    </item>
+  </JsonDocs>
+  <SwaggerDocs />
+  <WsdlDocuments />
+  <Xslts>
+    <item>
+      <key>
+        <string>Map810Test1</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>b39a1534-a2c1-4c75-87d5-bd7c862b6ea9</Id>
+          <Version>57206f06-be65-4836-80b2-f04ac5777a6b</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>Map810Test1</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>Map810Test2</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>4157a841-77a8-4eee-a927-825963fe7dfa</Id>
+          <Version>572317a7-7e3a-4b47-8a41-5f1491d018fb</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>Map810Test2</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>856Map</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>df056f40-afa2-47c1-aaef-0baeeee98e50</Id>
+          <Version>50fa2e5b-6eb2-41e1-9c1a-85ec850575b0</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>856Map</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>PartnerToSqlAdapter</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>bced0d5a-365d-4802-beef-ae7fc82db730</Id>
+          <Version>b42ba5ec-954c-4c1b-b808-1f01a7f66bdc</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>PartnerToSqlAdapter</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>AgreementToSqlAdapter</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>758494f9-d4af-4491-a15c-715829edc92d</Id>
+          <Version>65368ad3-965e-46c0-8580-8b727d123ef3</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>AgreementToSqlAdapter</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>CIG112233445566.TX3344556677888.00401.837.CIG112233445577.TX3344556677888.004010X222</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>b93eb7fa-8e19-4e8c-bb86-e3519d916fe3</Id>
+          <Version>099002c6-9110-4a96-b9be-731b7d14cc69</Version>
+          <BusinessFlows />
+          <Description>Cigna To Texas HHS 837 4010 Inbound</Description>
+          <Name>CIG112233445566.TX3344556677888.00401.837.CIG112233445577.TX3344556677888.004010X222</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>TX3344556677888.CIG112233445566.00401.820.TX3344556677888.CIG112233445577.00401.Outbound</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>91fad87b-10aa-490d-8a8b-b42afc2f227d</Id>
+          <Version>c11957cf-9211-4fff-af15-27d014b59897</Version>
+          <BusinessFlows />
+          <Description>Texas HHS To Cigna 820 4010 Outbound</Description>
+          <Name>TX3344556677888.CIG112233445566.00401.820.TX3344556677888.CIG112233445577.00401.Outbound</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>WLG102938475647.MCK019283746574.00401.850.WLG102938475647.MCK019283746574.00401.Inbound</string>
+      </key>
+      <value>
+        <ESBXslt>
+          <Id>1767e842-f3fc-4f02-a0fa-aa7c17512eb3</Id>
+          <Version>2d626f86-5a39-464f-901d-968af9bbe2b7</Version>
+          <BusinessFlows />
+          <Description />
+          <Name>WLG102938475647.MCK019283746574.00401.850.WLG102938475647.MCK019283746574.00401.Inbound</Name>
+          <Group>General</Group>
+          <IsSystemObject>false</IsSystemObject>
+          <Storing>false</Storing>
+          <Xslt />
+          <TestInput />
+          <TestOutput />
+        </ESBXslt>
+      </value>
+    </item>
+  </Xslts>
+  <BusinessEvents />
+  <Deployments />
+  <MessagePatterns />
+  <Bridges />
+  <Databases />
+  <Keys />
+  <Workflows />
+  <Applications />
+  <BusinessFlows />
+  <Bindings />
+  <Behaviors />
+  <Adapters />
+  <Credentials />
+  <ServicePolicies />
+  <AdapterPolicies />
+  <Endpoints />
+  <AccessControlLists />
+  <Administrators />
+  <IsEncrypted>false</IsEncrypted>
+</ESBConfiguration>

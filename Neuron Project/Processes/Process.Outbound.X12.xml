@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>88283f8e-c206-419b-9459-cc4ec8e28dc0</Id>
+  <Version>5d1a7a05-5f96-4d7a-b77b-bb5d1a55b419</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>Process.Outbound.X12</Name>
+  <IsSystemObject>false</IsSystemObject>
+  <Category>General</Category>
+  <IsEncrypted>true</IsEncrypted>
+  <Path />
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Process.Outbound.X12&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d2p1:string&gt;OopFactory.X12, Version=3.0.10.0, Culture=neutral, PublicKeyToken=24f1be617e479584&lt;/d2p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep i:type="ExceptionPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Interchange&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Catch&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Exception&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceError("++++++++++ Process Outbound X12 - !!!EXCEPTION!!! Step");
+
+PipelineException parentEx = (PipelineException)context.Properties["PipelineException"];
+
+context.Instance.TraceError("...!!!........Process Outbound X12 - !!!EXCEPTION!!! Step - ERROR: " + parentEx.InnerException.Message);
+
+context.Data.Text = "&amp;lt;Response&amp;gt;ERROR: " + parentEx.InnerException.Message + "&amp;lt;/Response&amp;gt;";&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typec31cc88e1bc4d1c9da192b561249c7&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Catch&gt;&lt;Finally&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageTraceMessagePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;TraceMessage&lt;/Name&gt;&lt;Uniquename /&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Finally&gt;&lt;Try&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Configure Get Interchange control Number&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Configure Get Interchange Control Number Step - Start");
+
+// Save interchange
+context.Properties.Add("interchange", context.Data.ToXDocument());
+
+XDocument doc = context.Data.ToXDocument();
+
+//Validate that interchange contains the same sender and receiver IDs for all groups
+List&amp;lt;string&amp;gt; Sender = (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("SenderInterchangeID")).Distinct().ToList();
+if(Sender.Count &amp;gt; 1)
+{
+	throw new System.Exception("ERROR: More than 1 Sender ID in this interchange.");
+}
+
+List&amp;lt;string&amp;gt; Receiver = (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("ReceiverInterchangeID")).Distinct().ToList();
+if(Receiver.Count &amp;gt; 1)
+{
+	throw new System.Exception("ERROR: More than 1 Receiver ID in this interchange.");
+}
+
+// Save X12 envelope values for future use
+context.Properties["SenderInterchangeID"] 	= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("SenderInterchangeID")).First().ToString();
+context.Properties["ReceiverInterchangeID"] = (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("ReceiverInterchangeID")).First().ToString();
+context.Properties["InterchangeVersion"] 	= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("InterchangeVersion")).First().ToString();
+context.Properties["TransactionType"] 		= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("TransactionType")).First().ToString();
+context.Properties["Direction"] 			= "Outbound";
+context.Properties["SenderGroupID"] 		= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("SenderGroupID")).First().ToString();
+context.Properties["ReceiverGroupID"] 		= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("ReceiverGroupID")).First().ToString();
+context.Properties["GroupVersion"] 			= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("GroupVersion")).First().ToString();
+var groupcount = from x in doc.Descendants("Group")			select x;
+context.Properties["GroupCount"] 			= groupcount.Count();
+
+// create the message for stored procedure to get the agreement
+XDocument outDoc = new XDocument(
+new XElement("Execute", new XAttribute("sp", "sp_Agreement_Get"),
+new XElement("Parameters", 
+new XElement("Parameter", new XAttribute("name", "@senderinterchangeid"), 		new XAttribute("value", context.Properties["SenderInterchangeID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@receiverinterchangeid"), 	new XAttribute("value", context.Properties["ReceiverInterchangeID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@interchangeversion"), 		new XAttribute("value", context.Properties["InterchangeVersion"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@transactiontype"), 			new XAttribute("value", context.Properties["TransactionType"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@direction"), 				new XAttribute("value", context.Properties["Direction"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@applicationsenderid"), 		new XAttribute("value", context.Properties["SenderGroupID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@applicationreceiverid"), 	new XAttribute("value", context.Properties["ReceiverGroupID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@applicationversion"),		new XAttribute("value", context.Properties["GroupVersion"].ToString())))));
+
+context.Data.Text = outDoc.ToString();	&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type8855f82bb774bb9a54d8338c8bbac6&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:ExecuteAdapterPipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Get Interchange Control Number&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d6p1:AdapterName&gt;AEP.SQL.EDI.InterchangeControlNumber.Get&lt;/d6p1:AdapterName&gt;&lt;d6p1:AdapterPoolTimeout&gt;PT1M&lt;/d6p1:AdapterPoolTimeout&gt;&lt;d6p1:MaxAdapterInstances&gt;100&lt;/d6p1:MaxAdapterInstances&gt;&lt;d6p1:Timeout&gt;PT1M&lt;/d6p1:Timeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Set Interchange Control Number&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Set Interchange Control Number Step - Start");
+
+XDocument doc = context.Data.ToXDocument();
+
+context.Properties.Add("interchangecontrolnumber", (from x in doc.Root.Descendants("Column") where (string)x.Attribute("name").Value == "ISA13InterchangeControlNumber" 	select (string)x.Value).SingleOrDefault().ToString());
+
+//Restore interchange
+context.Data.Text = context.Properties["interchange"].ToString();&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type09202e3a8884072a663977dcfb81c9&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="SplitterPipelineStepOfESBMessageESBMessageu6r3vdAt"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Groups&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Aggregator xmlns:d7p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d7p1:XmlWrapperEsbMessageAggregator"&gt;&lt;WrapperElementName i:nil="true" /&gt;&lt;WrapperElementNamespace i:nil="true" /&gt;&lt;d7p1:WrapperElementName&gt;Interchange&lt;/d7p1:WrapperElementName&gt;&lt;d7p1:WrapperElementNamespace i:nil="true" /&gt;&lt;/Aggregator&gt;&lt;Executor i:type="SynchronousSplitExecutorOfESBMessagexAPWb1W4" /&gt;&lt;ForEach&gt;&lt;Bindings xmlns:d8p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d9p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d9p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Configure Get Agreement&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Configure Get Agreement-Group Step - Start");
+
+// Save group
+context.Properties["group"] = context.Data.ToXDocument();
+
+XDocument doc = context.Data.ToXDocument();
+
+var transcount = from x in doc.Descendants("Transaction")	select x;
+
+// Save X12 envelope values for future use
+context.Properties["SenderInterchangeID"] 	= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("SenderInterchangeID")).SingleOrDefault().ToString();
+context.Properties["ReceiverInterchangeID"] = (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("ReceiverInterchangeID")).SingleOrDefault().ToString();
+context.Properties["InterchangeVersion"] 	= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("InterchangeVersion")).SingleOrDefault().ToString();
+context.Properties["TransactionType"] 		= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("TransactionType")).SingleOrDefault().ToString();
+context.Properties["Direction"] 			= "Outbound";
+context.Properties["SenderGroupID"] 		= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("SenderGroupID")).SingleOrDefault().ToString();
+context.Properties["ReceiverGroupID"] 		= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("ReceiverGroupID")).SingleOrDefault().ToString();
+context.Properties["GroupVersion"] 			= (from x in doc.Root.Descendants("AgreementLookup") select (string)x.Element("GroupVersion")).SingleOrDefault().ToString();
+context.Properties["TransactionCount"] 		= transcount.Count();
+
+// create the message for stored procedure to get the agreement
+XDocument outDoc = new XDocument(
+new XElement("Execute", new XAttribute("sp", "sp_Agreement_Get"),
+new XElement("Parameters", 
+new XElement("Parameter", new XAttribute("name", "@senderinterchangeid"), 		new XAttribute("value", context.Properties["SenderInterchangeID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@receiverinterchangeid"), 	new XAttribute("value", context.Properties["ReceiverInterchangeID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@interchangeversion"), 		new XAttribute("value", context.Properties["InterchangeVersion"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@transactiontype"), 			new XAttribute("value", context.Properties["TransactionType"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@direction"), 				new XAttribute("value", context.Properties["Direction"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@applicationsenderid"), 		new XAttribute("value", context.Properties["SenderGroupID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@applicationreceiverid"), 	new XAttribute("value", context.Properties["ReceiverGroupID"].ToString())),
+new XElement("Parameter", new XAttribute("name", "@applicationversion"),		new XAttribute("value", context.Properties["GroupVersion"].ToString())))));
+
+context.Data.Text = outDoc.ToString();	&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d10p1:string&gt;Neuron&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Pipelines&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Esb&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d10p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type8855f82bb774bb9a54d8338c8bbac6&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d9p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d9p1:ExecuteAdapterPipelineStep"&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Get Agreement&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d9p1:AdapterName&gt;AEP.SQL.EDI.Agreement.Get&lt;/d9p1:AdapterName&gt;&lt;d9p1:AdapterPoolTimeout&gt;PT1M&lt;/d9p1:AdapterPoolTimeout&gt;&lt;d9p1:MaxAdapterInstances&gt;100&lt;/d9p1:MaxAdapterInstances&gt;&lt;d9p1:Timeout&gt;PT1M&lt;/d9p1:Timeout&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d9p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d9p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Set Agreement Properties&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Save Agreement Properties-Group Step - Start");
+
+context.Properties["agreement"] = context.Data.ToXDocument();
+
+//Restore group
+context.Data.Text = context.Properties["group"].ToString();&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d10p1:string&gt;Neuron&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Pipelines&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Esb&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d10p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type09202e3a8884072a663977dcfb81c9&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="SplitterPipelineStepOfESBMessageESBMessageu6r3vdAt"&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Transactions&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Aggregator xmlns:d10p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d10p1:XmlWrapperEsbMessageAggregator"&gt;&lt;WrapperElementName i:nil="true" /&gt;&lt;WrapperElementNamespace i:nil="true" /&gt;&lt;d10p1:WrapperElementName&gt;FunctionGroup&lt;/d10p1:WrapperElementName&gt;&lt;d10p1:WrapperElementNamespace i:nil="true" /&gt;&lt;/Aggregator&gt;&lt;Executor i:type="SynchronousSplitExecutorOfESBMessagexAPWb1W4" /&gt;&lt;ForEach&gt;&lt;Bindings xmlns:d11p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d12p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d12p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d13p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Dynamic Mapping&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d13p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Dynamic Mapping Process Step - Start");
+
+string mapName = context.Properties["SenderInterchangeID"].ToString() + "." + 
+	             context.Properties["ReceiverInterchangeID"].ToString() + "." +  
+	             context.Properties["InterchangeVersion"].ToString() + "." + 
+	             context.Properties["TransactionType"].ToString()  + "." +
+				 context.Properties["SenderGroupID"].ToString()  + "." +
+				 context.Properties["ReceiverGroupID"].ToString()  + "." +
+				 context.Properties["GroupVersion"].ToString()  + ".Outbound";
+
+//check if map exists
+string outVal;
+if(context.EnvironmentVariables.TryGetValue(mapName, out outVal))
+{
+	// Add the agreement node to the message	
+//	XDocument doc = context.Data.ToXDocument();
+//	XDocument agreement = XDocument.Parse(context.Properties["agreement"].ToString());
+//	XElement agreementElement = new XElement("Agreement");
+//	agreementElement.Add(from x in agreement.Root.Elements("Table") select x.Element("Row"));
+//	doc.Element("OutboundX12").Add(agreementElement);
+//	context.Data.Text = doc.ToString();
+//	context.Instance.TraceInformation(context.Data.Text);
+	
+	//Add xslt parameters, if any
+	//System.Xml.Xsl.XsltArgumentList argsList = new System.Xml.Xsl.XsltArgumentList();
+	//argsList.AddParam("", "", "");
+	
+	//enable scripting in the transform
+	var settings = new System.Xml.Xsl.XsltSettings();
+	settings.EnableScript = true;
+
+	//Load xsl transform
+	var myXslTrans = new System.Xml.Xsl.XslCompiledTransform(); 
+	myXslTrans.Load(context.EnvironmentVariables[mapName], settings, new System.Xml.XmlUrlResolver()); 
+
+	//Execute the transform....
+	System.IO.StringWriter writer = new System.IO.StringWriter();
+
+	//....with parameters
+//	try
+//	{
+//		myXslTrans.Transform(context.Data.ToXmlDocument(), argsList, writer); 
+//	}
+//	catch(System.Xml.Xsl.XsltException xslex)
+//	{
+//		context.Instance.TraceInformation("ERROR: " + xslex.Message);
+//		throw xslex;
+//	}
+//	finally
+//	{
+//		context.Data.Text = writer.ToString();
+//		writer.Close();
+//	}
+	
+	//....or without parameters
+	try
+	{
+		myXslTrans.Transform(context.Data.ToXmlDocument(), null, writer);
+	}
+	catch(System.Xml.Xsl.XsltException xslex)
+	{
+		context.Instance.TraceInformation("ERROR: " + xslex.Message);
+		throw xslex;
+	}
+	finally
+	{
+		context.Data.Text = writer.ToString();
+		writer.Close();
+		//context.Properties.Add("ST02", from x in context.Data.ToXDocument() );
+	}	
+}
+else
+{
+	throw new System.Exception("No environment variable exists for map: " + mapName);
+}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d13p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d13p1:string&gt;Neuron&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Neuron.Pipelines&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Neuron.Esb&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d13p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type25639f9b34b428dbcde774166c42d2&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d12p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d12p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d13p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;ST/SE Envelope&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d13p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - ST/SE Envelope Step - Start");
+
+XDocument doc = context.Data.ToXDocument();
+
+//ST01
+var st01List = from x in doc.Descendants("ST") select x;
+foreach (XElement st in st01List.ToList())
+{
+	st.SetElementValue("ST01", context.Properties["TransactionType"].ToString());
+}
+
+//SE01
+var segments = from x in doc.Root.Descendants() select x;
+int count = 0;
+foreach (XElement segment in segments)
+{	
+	if(segment.HasElements &amp;amp;&amp;amp; segment.Name != "Loop")
+	{
+		count++;
+	}
+	
+}
+var se01List = from x in doc.Descendants("SE") select x;
+foreach(XElement se in se01List)
+{
+	se.SetElementValue("SE01", count.ToString());
+}
+
+context.Data.Text = doc.ToString();&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d13p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d13p1:string&gt;Neuron&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Neuron.Pipelines&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Neuron.Esb&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d13p1:string&gt;&lt;d13p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d13p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typebee19256d8648ca927dd6f4d743c03&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/ForEach&gt;&lt;MaxThreadCount&gt;10&lt;/MaxThreadCount&gt;&lt;Splitter xmlns:d10p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d10p1:XPathEsbMessageSplitter"&gt;&lt;d10p1:XPath&gt;Group/Transaction&lt;/d10p1:XPath&gt;&lt;/Splitter&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d9p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d9p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d10p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;GS/GE Envelope&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - GS/GE Envelope Step - Start");
+
+XDocument doc = context.Data.ToXDocument();
+
+//Set Transaction counts 
+//ST02
+var stList = from x in doc.Descendants("ST") select x;
+foreach (XElement st in stList)
+{
+	st.SetElementValue("ST02", (stList.ToList().IndexOf(st) + 1).ToString().PadLeft(9, '0'));
+}
+
+///SE02
+var seList = from x in doc.Descendants("SE") select x;
+foreach(XElement se in seList)
+{
+	se.SetElementValue("SE02", (seList.ToList().IndexOf(se) + 1).ToString().PadLeft(9, '0'));
+}
+
+//Restore agreement data
+context.Data.Text = context.Properties["agreement"].ToString();
+XDocument agrmt = context.Data.ToXDocument();
+
+//Build GS 
+XElement gsTree = new XElement("GS",
+    new XElement("GS01", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS01FunctionalIDCode" select x.Value),
+    new XElement("GS02", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS02ApplicationSenderID" select x.Value),
+    new XElement("GS03", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS03ApplicationReceiverID" select x.Value),
+    new XElement("GS04", System.DateTime.Now.ToString("yyyMMdd")),
+	new XElement("GS05", System.DateTime.Now.ToString("HHmmss")),
+	new XElement("GS06", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS06GroupControlNumber" select x.Value),
+	new XElement("GS07", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS07ResponsibleAgencyCode" select x.Value),
+	new XElement("GS08", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS08VersionReleaseIndustryIDCode" select x.Value)
+);
+
+//Add GS to message
+doc.Root.Elements("Transaction").First().AddBeforeSelf(gsTree);
+
+//Build GE
+XElement geTree = new XElement("GE",
+    new XElement("GE01", context.Properties["TransactionCount"].ToString()),
+    new XElement("GE02", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "GS06GroupControlNumber" select x.Value)
+);
+
+//Add GE to message
+doc.Root.Add(geTree);
+
+
+context.Data.Text = doc.ToString();&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d10p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d10p1:string&gt;Neuron&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Pipelines&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Neuron.Esb&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d10p1:string&gt;&lt;d10p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d10p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type3841cc8e26944eb8635f980cd4a54a&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/ForEach&gt;&lt;MaxThreadCount&gt;10&lt;/MaxThreadCount&gt;&lt;Splitter xmlns:d7p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d7p1:XPathEsbMessageSplitter"&gt;&lt;d7p1:XPath&gt;Interchange/Group&lt;/d7p1:XPath&gt;&lt;/Splitter&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Convert XML to X12&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Convert XML to X12 Step: Start");
+
+XDocument doc = context.Data.ToXDocument();
+
+//Get agreement data
+context.Data.Text = context.Properties["agreement"].ToString();
+XDocument agrmt = context.Data.ToXDocument();
+
+//Build ISA 
+XElement isaTree = new XElement("ISA",
+    new XElement("ISA01", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA01AuthorizationInformationQualifier" 	select x.Value.PadRight(2, ' ')),
+    new XElement("ISA02", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA02AuthorizationInformation" 			select x.Value.PadRight(10, ' ')),
+    new XElement("ISA03", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA03SecurityInformationQualifier" 		select x.Value.PadRight(2, ' ')),
+    new XElement("ISA04", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA04SecurityInformation" 				select x.Value.PadRight(10, ' ')),
+	new XElement("ISA05", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA05SenderInterchangeIDQualifier" 		select x.Value.PadRight(2, ' ')),
+	new XElement("ISA06", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA06SenderInterchangeID" 				select x.Value.PadRight(15, ' ')),
+	new XElement("ISA07", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA07ReceiverInterchangeIDQualifier" 		select x.Value.PadRight(2, ' ')),
+	new XElement("ISA08", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA08ReceiverInterchangeID" 				select x.Value.PadRight(15, ' ')),
+	new XElement("ISA09", System.DateTime.Now.ToString("yyMMdd")),
+	new XElement("ISA10", System.DateTime.Now.ToString("HHmm")),
+	new XElement("ISA11", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA11InterchangeStandardsID" 				select x.Value),
+	new XElement("ISA12", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA12InterchangeVersionID" 				select x.Value),
+	new XElement("ISA13", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA13InterchangeControlNumber" 			select x.Value.PadLeft(9, '0')),
+	new XElement("ISA14", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA14AckRequested" 						select x.Value),
+	new XElement("ISA15", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA15TestIndicator" 						select x.Value),
+	new XElement("ISA16", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA16SubElementSeparator" 				select System.Net.WebUtility.HtmlDecode(x.Value))
+);
+
+//Add ISA to message
+doc.Root.Elements("FunctionGroup").First().AddBeforeSelf(isaTree);
+
+//Add separators
+string segmentSeparator = string.Empty;
+string segmentSeparatorSuffix = string.Empty;
+string elementSeparator = string.Empty;
+string subElementSeparator = string.Empty;
+
+//Segment and Suffix
+var segSep = from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "SegmentSeparator" select x;
+foreach (XElement elem in segSep)
+{
+	segmentSeparator = System.Net.WebUtility.HtmlDecode(elem.Value);
+}
+var segSepSuffix = from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "" select x;
+foreach (XElement elem in segSepSuffix)
+{
+	segmentSeparatorSuffix = System.Net.WebUtility.HtmlDecode(elem.Value);
+}
+doc.Root.Add(new XAttribute("segment-terminator", segmentSeparator + segmentSeparatorSuffix));
+
+//Element
+var elemSep = from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ElementSeparator" select x;
+foreach (XElement elem in elemSep)
+{
+	elementSeparator = System.Net.WebUtility.HtmlDecode(elem.Value);
+}
+doc.Root.Add(new XAttribute("element-separator", elementSeparator));
+
+//SubElement
+var subElemSep = from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA16SubElementSeparator" select x;
+foreach (XElement elem in subElemSep)
+{
+	subElementSeparator = System.Net.WebUtility.HtmlDecode(elem.Value);
+}
+doc.Root.Add(new XAttribute("sub-element-separator", subElementSeparator));
+
+//Build IEA
+XElement ieaTree = new XElement("IEA",
+    new XElement("IEA01", context.Properties["GroupCount"].ToString()),
+    new XElement("IEA02", from x in agrmt.Descendants("Column") where (string)x.Attribute("name") == "ISA13InterchangeControlNumber" 			select x.Value.PadLeft(9, '0'))
+);
+
+//Add IEA to message
+doc.Root.Add(ieaTree);
+
+try
+{
+	context.Data.Text = doc.ToString();
+	string xmltext = context.Data.Text;
+	var parser = new OopFactory.X12.Parsing.X12Parser();
+	string x12 = string.Empty;
+	x12 = parser.TransformToX12(xmltext);
+	
+	context.Data.Text = x12;
+}
+catch(Exception ex)
+{
+	throw ex;
+}
+
+&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type5c864b9831a49409c0f6bafbe42ce4&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Set Audit Properties&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("++++++++++ Process Outbound X12 - Set Audit Properties Step - Start");
+
+XDocument doc = XDocument.Parse(context.Properties["agreement"].ToString());
+
+context.Data.SetProperty("X12", "SenderInterchangeID", 		context.Properties["SenderInterchangeID"].ToString());
+context.Data.SetProperty("X12", "ReceiverInterchangeID", 	context.Properties["ReceiverInterchangeID"].ToString());
+context.Data.SetProperty("X12", "TransactionType", 			context.Properties["TransactionType"].ToString());
+context.Data.SetProperty("X12", "Direction", 				"Outbound");
+context.Data.SetProperty("X12", "DateSent", 				System.DateTime.Now.ToString());
+context.Data.SetProperty("X12", "NumberOfTransactions", 	context.Properties["TransactionCount"].ToString());
+context.Data.SetProperty("X12", "InterchangeControlNumber", (from x in doc.Descendants("Row") where (string)x.Attribute("Column") == "ISA13InterchangeControlNumber" select x.Value).ToString());
+context.Data.SetProperty("X12", "SenderApplicationID", 		context.Properties["SenderGroupID"].ToString());
+context.Data.SetProperty("X12", "ReceiverApplicationID", 	context.Properties["ReceiverGroupID"].ToString());
+context.Data.SetProperty("X12", "GroupControlNumber", 		(from x in doc.Descendants("Row") where (string)x.Attribute("Column") == "GS06GroupControlNumber" select x.Value).ToString());&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type97bc0edc9d644298a118b4337e0380&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageAuditPipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Audit Outbound X12&lt;/Name&gt;&lt;Uniquename /&gt;&lt;d6p1:Action&gt;None&lt;/d6p1:Action&gt;&lt;d6p1:AuditPoolTimeout&gt;PT1M&lt;/d6p1:AuditPoolTimeout&gt;&lt;d6p1:FailureDetail i:nil="true" /&gt;&lt;d6p1:FailureType i:nil="true" /&gt;&lt;d6p1:IncludeBody&gt;true&lt;/d6p1:IncludeBody&gt;&lt;d6p1:IncludeMsgProps&gt;true&lt;/d6p1:IncludeMsgProps&gt;&lt;d6p1:MaxAuditInstances&gt;1&lt;/d6p1:MaxAuditInstances&gt;&lt;d6p1:XPath i:nil="true" /&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Try&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep i:type="CancelPipelineStepOfESBMessagexAPWb1W4"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Name&gt;Cancel&lt;/Name&gt;&lt;Uniquename /&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Steps&gt;&lt;/ESBMessagePipeline&gt;</PipelineBlob>
+</ESBMessagePipelineStorage>

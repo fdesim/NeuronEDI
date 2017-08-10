@@ -1,0 +1,38 @@
+﻿<Agreements>
+  <Agreement>
+    <Action>Create</Action>
+    <Name>Cigna Healthcare To Chase Bank 835 5010</Name>
+    <TransactionType>835</TransactionType>
+    <Direction>Inbound</Direction>
+    <Activated>0</Activated>
+    <AuthorizationInformationQualifier>00</AuthorizationInformationQualifier>
+    <AuthorizationInformation></AuthorizationInformation>
+    <SecurityInformationQualifier>00</SecurityInformationQualifier>
+    <SecurityInformation></SecurityInformation>
+    <Partner Type="Sender">
+      <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+      <InterchangeID>CIG938787629345</InterchangeID>
+      <FunctionalGroupID>CIG938787629345</FunctionalGroupID>
+    </Partner>
+    <Partner Type="Receiver">
+      <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+      <InterchangeID>CB3986547292818</InterchangeID>
+      <FunctionalGroupID>CB3986547292818</FunctionalGroupID>
+    </Partner>
+    <InterchangeStandardsID>U</InterchangeStandardsID>
+    <InterchangeVersionID>00501</InterchangeVersionID>
+    <InterchangeControlNumber></InterchangeControlNumber>
+    <AckRequested>0</AckRequested>
+    <TestIndicator>T</TestIndicator>
+    <SegmentSeparator>~</SegmentSeparator>
+    <ElementSeparator>*</ElementSeparator>
+    <SubElementSeparator>:</SubElementSeparator>
+    <FunctionalIDCode>HP</FunctionalIDCode>
+    <ApplicationSenderID>CIG938787629345</ApplicationSenderID>
+    <ApplicationReceiverID>CB3986547292818</ApplicationReceiverID>
+    <GroupControlNumber></GroupControlNumber>
+    <ResponsibleAgencyCode>X</ResponsibleAgencyCode>
+    <VersionReleaseIndustryIDCode>00501</VersionReleaseIndustryIDCode>
+    <GroupControlNumber></GroupControlNumber>
+  </Agreement>
+</Agreements>

@@ -1,0 +1,129 @@
+﻿<Transaction>
+	<ST>
+		<ST01 />
+		<ST02 />
+	</ST>
+	<BPR>
+		<BPR01>C</BPR01>
+		<BPR02>3281.44</BPR02>
+		<BPR03>C</BPR03>
+		<BPR04>ACH</BPR04>
+		<BPR05>CTX</BPR05>
+		<BPR06>01</BPR06>
+		<BPR07>3487432</BPR07>
+		<BPR08>DA</BPR08>
+		<BPR09>089345</BPR09>
+		<BPR10>834523</BPR10>
+		<BPR12>DA</BPR12>
+		<BPR13>3248520</BPR13>
+		<BPR14>DA</BPR14>
+		<BPR15>982345</BPR15>
+		<BPR16>20170217</BPR16>
+	</BPR>
+	<TRN>
+		<TRN01>1</TRN01>
+		<TRN02>9087487203452</TRN02>
+	</TRN>
+	<REF>
+		<REF01>CK</REF01>
+		<REF02>234</REF02>
+	</REF>
+	<DTM>
+		<DTM01>007</DTM01>
+		<DTM02>20170217</DTM02>
+	</DTM>
+	<Loop LoopID="N1" Name="Name">
+		<N1>
+			<N101>PE</N101>
+			<N102>Cigna Healthcare</N102>
+		</N1>
+	</Loop>
+	<Loop LoopID="N1" Name="Name">
+		<N1>
+			<N101>PR</N101>
+			<N102>State of Texas HHS</N102>
+		</N1>
+	</Loop>
+	<ENT>
+		<ENT01>1</ENT01>
+	</ENT>
+	<Loop LoopID="RMR" Name="Remittance Advice Accounts Receivable O">
+		<RMR>
+			<RMR01>FR</RMR01>
+			<RMR02>2347</RMR02>
+			<RMR04>710.34</RMR04>
+		</RMR>
+		<REF>
+			<REF01>WY</REF01>
+			<REF02>3456</REF02>
+		</REF>
+		<REF>
+			<REF01>BM</REF01>
+			<REF02>578</REF02>
+		</REF>
+		<REF>
+			<REF01>FR</REF01>
+			<REF02>1345</REF02>
+		</REF>
+		<DTM>
+			<DTM01>001</DTM01>
+			<DTM02>20170501</DTM02>
+		</DTM>
+	</Loop>
+	<ENT>
+		<ENT01>2</ENT01>
+	</ENT>
+	<Loop LoopID="RMR" Name="Remittance Advice Accounts Receivable O">
+		<RMR>
+			<RMR01>FR</RMR01>
+			<RMR02>2347</RMR02>
+			<RMR04>710.34</RMR04>
+		</RMR>
+		<REF>
+			<REF01>WY</REF01>
+			<REF02>3456</REF02>
+		</REF>
+		<REF>
+			<REF01>BM</REF01>
+			<REF02>578</REF02>
+		</REF>
+		<REF>
+			<REF01>FR</REF01>
+			<REF02>1345</REF02>
+		</REF>
+		<DTM>
+			<DTM01>001</DTM01>
+			<DTM02>20170501</DTM02>
+		</DTM>
+	</Loop>
+	<ENT>
+		<ENT01>3</ENT01>
+	</ENT>
+	<Loop LoopID="RMR" Name="Remittance Advice Accounts Receivable O">
+		<RMR>
+			<RMR01>FR</RMR01>
+			<RMR02>2347</RMR02>
+			<RMR04>710.34</RMR04>
+		</RMR>
+		<REF>
+			<REF01>WY</REF01>
+			<REF02>3456</REF02>
+		</REF>
+		<REF>
+			<REF01>BM</REF01>
+			<REF02>578</REF02>
+		</REF>
+		<REF>
+			<REF01>FR</REF01>
+			<REF02>1345</REF02>
+		</REF>
+		<DTM>
+			<DTM01>001</DTM01>
+			<DTM02>20170501</DTM02>
+		</DTM>
+	</Loop>
+	<SE>
+		<SE01 />
+		<SE02 />
+	</SE>
+</Transaction>

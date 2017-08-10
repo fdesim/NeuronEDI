@@ -1,0 +1,5 @@
+﻿<Execute sp="sp_Agreement_Configure">
+	<Parameters>
+		<Parameter name="@agreement" value="" />
+	</Parameters>
+</Execute>

@@ -1,0 +1,293 @@
+﻿<Transaction ControlNumber="000000001">
+      <ST>
+        <!--Transaction Set Identifier Code-->
+        <ST01>850</ST01>
+        <!--Transaction Set Control Number-->
+        <ST02>000000001</ST02>
+      </ST>
+      <BEG>
+        <BEG01>00</BEG01>
+        <BEG02>NE</BEG02>
+        <BEG03>POSAMPLE1</BEG03>
+        <BEG04 />
+        <BEG05>19960603</BEG05>
+      </BEG>
+      <CUR>
+        <CUR01>EB</CUR01>
+        <CUR02>USD
+REF</CUR02>
+        <CUR03>PG</CUR03>
+        <CUR04>S6
+DTM</CUR04>
+        <CUR05>007</CUR05>
+        <CUR06>19960601
+N1</CUR06>
+        <CUR07>BT</CUR07>
+        <CUR08>ANYUSLAR</CUR08>
+        <CUR09>91</CUR09>
+        <CUR10>BT1234</CUR10>
+      </CUR>
+      <REF>
+        <!--Reference Identification Qualifier-->
+        <REF01>AH</REF01>
+        <!--Reference Identification-->
+        <REF02>2345678901</REF02>
+      </REF>
+      <Loop LoopId="N1" Name="Name">
+        <N1>
+          <!--Entity Identifier Code-->
+          <N101>ST</N101>
+          <!--Name-->
+          <N102>SHIP TO NAME </N102>
+          <!--Identification Code Qualifier-->
+          <N103>93</N103>
+          <!--Identification Code-->
+          <N104>00002150</N104>
+        </N1>
+        <N3>
+          <!--Address Information-->
+          <N301>SHIP TO ADDR1 </N301>
+          <!--Address Information-->
+          <N302>SHIP TO ADDR2 </N302>
+        </N3>
+        <N3>
+          <!--Address Information-->
+          <N301>SHIP TO ADDR3 </N301>
+          <!--Address Information-->
+          <N302>SHIP TO ADDR4 </N302>
+        </N3>
+        <N4>
+          <!--City Name-->
+          <N401>SANTA ANA</N401>
+          <!--State or Provice Code-->
+          <N402>CA</N402>
+          <!--Postal Code-->
+          <N403>92705</N403>
+          <!--Country Code-->
+          <N404>USA</N404>
+        </N4>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>SU</REF01>
+          <!--Reference Identification-->
+          <REF02>ENG </REF02>
+        </REF>
+        <PER>
+          <!--Contact Function Code-->
+          <PER01>NT</PER01>
+          <!--Name-->
+          <PER02>J.Q. Public</PER02>
+          <!--Communication Number Qualifier-->
+          <PER03>TE<!--Telephone--></PER03>
+          <!--Communication Number-->
+          <PER04>2065551212</PER04>
+          <!--Communication Number Qualifier-->
+          <PER05>FX<!--Facsimile--></PER05>
+          <!--Communication Number-->
+          <PER06>2065553434</PER06>
+          <!--Communication Number Qualifier-->
+          <PER07>EM<!--Electronic Mail--></PER07>
+          <!--Communication Number-->
+          <PER08>order@partner.com</PER08>
+        </PER>
+        <PKG>
+          <PKG01 />
+          <PKG02 />
+          <PKG03 />
+          <PKG04 />
+          <PKG05>Items packed with biodegradable materials</PKG05>
+        </PKG>
+      </Loop>
+      <Loop LoopId="PO1" Name="Baseline Item Data">
+        <PO1>
+          <PO101>1</PO101>
+          <PO102>13</PO102>
+          <PO103>EA</PO103>
+          <PO104>101.09</PO104>
+          <PO105 />
+          <PO106>MG</PO106>
+          <PO107>ITEM1</PO107>
+        </PO1>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>CE</REF01>
+          <!--Reference Identification-->
+          <REF02>MVLP</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>EU</REF01>
+          <!--Reference Identification-->
+          <REF02>ENDUSRPONUM1</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>ZZ<!--Mutually Defined--></REF01>
+          <!--Reference Identification-->
+          <REF02>CA</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>PT</REF01>
+          <!--Reference Identification-->
+          <REF02>PE</REF02>
+        </REF>
+      </Loop>
+      <Loop LoopId="PO1" Name="Baseline Item Data">
+        <PO1>
+          <PO101>2</PO101>
+          <PO102>9</PO102>
+          <PO103>EA</PO103>
+          <PO104>13.12</PO104>
+          <PO105 />
+          <PO106>MG</PO106>
+          <PO107>ITEM2</PO107>
+        </PO1>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>CE</REF01>
+          <!--Reference Identification-->
+          <REF02>MVLP</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>ZZ<!--Mutually Defined--></REF01>
+          <!--Reference Identification-->
+          <REF02>US</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>EU</REF01>
+          <!--Reference Identification-->
+          <REF02>ENDUSRPONUM2</REF02>
+        </REF>
+      </Loop>
+      <Loop LoopId="PO1" Name="Baseline Item Data">
+        <PO1>
+          <PO101>3</PO101>
+          <PO102>23</PO102>
+          <PO103>EA</PO103>
+          <PO104>74.00</PO104>
+          <PO105 />
+          <PO106>MG</PO106>
+          <PO107>ITEM3</PO107>
+        </PO1>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>CE</REF01>
+          <!--Reference Identification-->
+          <REF02>MVLP</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>ZZ<!--Mutually Defined--></REF01>
+          <!--Reference Identification-->
+          <REF02>US</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>EU</REF01>
+          <!--Reference Identification-->
+          <REF02>ENDUSRPONUM3</REF02>
+        </REF>
+      </Loop>
+      <Loop LoopId="PO1" Name="Baseline Item Data">
+        <PO1>
+          <PO101>4</PO101>
+          <PO102>10</PO102>
+          <PO103>EA</PO103>
+          <PO104>21.10</PO104>
+          <PO105 />
+          <PO106>MG</PO106>
+          <PO107>ITEM4</PO107>
+        </PO1>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>CE</REF01>
+          <!--Reference Identification-->
+          <REF02>MVLP</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>ZZ<!--Mutually Defined--></REF01>
+          <!--Reference Identification-->
+          <REF02>CA</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>PT</REF01>
+          <!--Reference Identification-->
+          <REF02>PE</REF02>
+        </REF>
+      </Loop>
+      <Loop LoopId="PO1" Name="Baseline Item Data">
+        <PO1>
+          <PO101>5</PO101>
+          <PO102>2</PO102>
+          <PO103>EA</PO103>
+          <PO104>20.00</PO104>
+          <PO105 />
+          <PO106>MG</PO106>
+          <PO107>ITEM5</PO107>
+        </PO1>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>CE</REF01>
+          <!--Reference Identification-->
+          <REF02>MFUL</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>ZZ<!--Mutually Defined--></REF01>
+          <!--Reference Identification-->
+          <REF02>US</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>EU</REF01>
+          <!--Reference Identification-->
+          <REF02>ENDUSRPONUM4</REF02>
+        </REF>
+      </Loop>
+      <Loop LoopId="PO1" Name="Baseline Item Data">
+        <PO1>
+          <PO101>6</PO101>
+          <PO102>2</PO102>
+          <PO103>EA</PO103>
+          <PO104>15.00</PO104>
+          <PO105 />
+          <PO106>MG</PO106>
+          <PO107>ITEM6</PO107>
+        </PO1>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>CE</REF01>
+          <!--Reference Identification-->
+          <REF02>MSTU</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>ZZ<!--Mutually Defined--></REF01>
+          <!--Reference Identification-->
+          <REF02>US</REF02>
+        </REF>
+        <REF>
+          <!--Reference Identification Qualifier-->
+          <REF01>EU</REF01>
+          <!--Reference Identification-->
+          <REF02>ENDUSRPONUM5</REF02>
+        </REF>
+      </Loop>
+      <Loop LoopId="CTT" Name="Transaction Totals">
+        <CTT>
+          <CTT01>5</CTT01>
+          <CTT02>57</CTT02>
+        </CTT>
+      </Loop>
+      <SE>
+        <!--Number of Included Segments-->
+        <SE01>40</SE01>
+        <!--Transaction Set Control Number-->
+        <SE02>000000001</SE02>
+      </SE>
+    </Transaction>

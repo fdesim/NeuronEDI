@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>3586f4ea-f4c7-4923-bb44-8631a0ae41c4</Id>
+  <Version>63487371-9e83-49cb-9410-f1bb5ff9f5fe</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>AEP.SQL.EDI.Partner.Configure</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <Bindings />
+  <FarmSingleInstance>false</FarmSingleInstance>
+  <Enabled>true</Enabled>
+  <Zone>Enterprise</Zone>
+  <IncludeMetadata>true</IncludeMetadata>
+  <AdapterName>SQL</AdapterName>
+  <AdapterMode>Execute</AdapterMode>
+  <Properties>
+    <NameValuePair>
+      <Name>ConnectionString</Name>
+      <Value>pMTk0qhy8HFmn3VPROQLFDVzwGuV7TeGIem0SmKbOh/m7J1e+qOevhcCA1itJaVn9MyHO7s0VjbWNQTcUBBzSzdlqE4LmyeQ0y7tT6fIaOE=</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>Transacted</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>IsolationLevelString</Name>
+      <Value>Serializable</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>CommandTimeout</Name>
+      <Value>30</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>SendTopic</Name>
+      <Value>EDI.TradingPartner.Configure</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>ForXml</Name>
+      <Value>False</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>PollingInterval</Name>
+      <Value>10</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>BatchSize</Name>
+      <Value>1</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>StoredProcedure</Name>
+      <Value>sp_TradingPartner_Configure</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>UseStoreProcedure</Name>
+      <Value>True</Value>
+    </NameValuePair>
+    <NameValuePair>
+      <Name>DatabaseTable</Name>
+      <Value>SqlAdapter</Value>
+    </NameValuePair>
+  </Properties>
+  <AdapterBindings />
+  <PartyId>Pub.X12.Partner.Configure</PartyId>
+  <RunAs />
+  <AdapterPolicy>Default</AdapterPolicy>
+</ESBEndpoint>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>9bc34260-c140-483d-8090-6d096cd3cff6</Id>
+  <Version>ae4ba591-147d-40e8-898b-0b57c3fb09fa</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>EDI.AgreementToSqlAdapter.Map</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+</NeuronVariable>

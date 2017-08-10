@@ -1,0 +1,19 @@
+<tpAgreements xmlns:tpa="http://neuron.edi.tpa">
+	<Agreement>
+	    <Action>update</Action>
+		<Sender>
+			<SenderId>ABC123</SenderId>
+			<SenderQual>01</SenderQual>
+			<SenderName>ABC Sender</SenderName>
+		</Sender>
+		<Receiver>
+			<ReceiverId>DEF456</ReceiverId>
+			<ReceiverQual>01</ReceiverQual>
+			<ReceiverName>DEF Receiver</ReceiverName>
+		</Receiver>
+		
+		<TransactionType>856</TransactionType>
+		<Direction>INBOUND</Direction>
+		<Version>00401</Version>
+	</Agreement>
+</tpAgreements>

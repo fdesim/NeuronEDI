@@ -1,0 +1,53 @@
+﻿<ASN>
+	<shipmentID>true</shipmentID>
+	<shipmentDate>20130426</shipmentDate>
+	<shipmentTime>113147</shipmentTime>
+	<Shipment>
+		<shippedDate>20130424</shippedDate>
+		<shipFrom>K&amp;S DENIM / NEESO JEANS</shipFrom>
+		<shipTo>EDGEWATER PARK, NJ DC</shipTo>
+		<Order>
+			<purchaseOrderNumber>230419904</purchaseOrderNumber>
+			<Pack>
+				<trackingNumber>00308863320088917167</trackingNumber>
+				<Item>
+					<productID>PO2304199LN4</productID>
+					<subLineID>56975558</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975561</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975613</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975626</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975671</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975749</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975859</subLineID>
+					<productDescription>DENIM</productDescription>
+				</Item>
+			</Pack>
+			<Pack>
+				<trackingNumber>00308863320088917143</trackingNumber>
+				<Item>
+					<productID>PO2304199LN4</productID>
+					<subLineID>56975558</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975561</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975613</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975626</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975671</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975749</subLineID>
+					<productDescription>DENIM</productDescription>
+					<subLineID>56975859</subLineID>
+					<productDescription>DENIM</productDescription>
+				</Item>
+			</Pack>
+		</Order>
+	</Shipment>
+</ASN>

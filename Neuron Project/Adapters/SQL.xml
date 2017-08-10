@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ESBAdapter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>bcd0df36-9894-414b-b0d6-45ab6f8f7088</Id>
+  <Version>b9ef6933-9d6f-442f-bc5a-faa3a1d5a10c</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>SQL</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+  <AdapterType>Net</AdapterType>
+  <Zone>Enterprise</Zone>
+  <BindingAssembly>Neuron.Esb.Adapters.SqlAdapter.dll</BindingAssembly>
+  <BindingClass>Neuron.Esb.Adapters.SqlAdapter</BindingClass>
+  <AdapterName>SQL Adapter</AdapterName>
+</ESBAdapter>

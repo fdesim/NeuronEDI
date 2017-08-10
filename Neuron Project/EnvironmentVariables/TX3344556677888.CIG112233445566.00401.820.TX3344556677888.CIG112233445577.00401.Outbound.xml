@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<NeuronVariable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Id>083fefec-f5b2-4b3e-9141-9b00b6135caa</Id>
+  <Version>941f8306-c367-4e05-b8a2-655e699f449b</Version>
+  <BusinessFlows />
+  <Description />
+  <Name>TX3344556677888.CIG112233445566.00401.820.TX3344556677888.CIG112233445577.00401.Outbound</Name>
+  <Group>General</Group>
+  <IsSystemObject>false</IsSystemObject>
+</NeuronVariable>

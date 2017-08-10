@@ -1,0 +1,274 @@
+﻿<Interchange segment-terminator="~" element-separator="*" sub-element-separator="&gt;">
+  <ISA>
+    <!--Author Information Qualifier-->
+    <ISA01>00<!--No Authorization Information Present--></ISA01>
+    <!--Author Information-->
+    <ISA02>          </ISA02>
+    <!--Security Information Qualifer-->
+    <ISA03>00<!--No Security Information Present--></ISA03>
+    <!--Security Information-->
+    <ISA04>          </ISA04>
+    <!--Interchange ID Qualifier-->
+    <ISA05>08<!--UCC EDI Communications ID (Comm ID)--></ISA05>
+    <!--Interchange Sender ID-->
+    <ISA06>9251750000     </ISA06>
+    <!--Interchange ID Qualifier-->
+    <ISA07>08<!--UCC EDI Communications ID (Comm ID)--></ISA07>
+    <!--Interchange Receiver ID-->
+    <ISA08>1234567890     </ISA08>
+    <!--Interchange Date-->
+    <ISA09>030627</ISA09>
+    <!--Interchange Time-->
+    <ISA10>1304</ISA10>
+    <!--Inter Control Standards Identifier-->
+    <ISA11>U<!--U.S. EDI Community of ASC X12, TDCC, and UCS--></ISA11>
+    <!--Inter Control Version Number-->
+    <ISA12>00401</ISA12>
+    <!--Inter Control Number-->
+    <ISA13>000001403</ISA13>
+    <!--Acknowlegment Requested-->
+    <ISA14>0<!--No Acknowledgment Requested--></ISA14>
+    <!--Usage Indicator-->
+    <ISA15>P<!--Production Data--></ISA15>
+    <!--Component Element Separator-->
+    <ISA16>
+      <ISA1601 />
+      <ISA1602 />
+    </ISA16>
+  </ISA>
+  <FunctionGroup>
+    <GS>
+      <!--Functional Identifier Code-->
+      <GS01>PO</GS01>
+      <!--Application Sender's Code-->
+      <GS02>8019721193</GS02>
+      <!--Application Receiver's Code-->
+      <GS03>1234567890</GS03>
+      <!--Date-->
+      <GS04>20030627</GS04>
+      <!--Time-->
+      <GS05>1304</GS05>
+      <!--Group Control Number-->
+      <GS06>1403</GS06>
+      <!--Responsible Agency Code-->
+      <GS07>X<!--Accredited Standards Committee X12--></GS07>
+      <!--Version/Release/Industry Identifier Code-->
+      <GS08>004010</GS08>
+    </GS>
+    <Transaction ControlNumber="0001">
+      <ST>
+        <!--Transaction Set Identifier Code-->
+        <ST01>810</ST01>
+        <!--Transaction Set Control Number-->
+        <ST02>0001</ST02>
+      </ST>
+      <BIG>
+        <BIG01>040713</BIG01>
+        <BIG02>1001</BIG02>
+        <BIG03>040625</BIG03>
+        <BIG04>P89320</BIG04>
+      </BIG>
+      <NTE>
+        <NTE01>GEN</NTE01>
+        <NTE02>59590001</NTE02>
+      </NTE>
+      <NTE>
+        <NTE01>GEN</NTE01>
+        <NTE02>IF ANY CHANGES OR SHORTAGES PLEASE</NTE02>
+      </NTE>
+      <NTE>
+        <NTE01>GEN</NTE01>
+        <NTE02>CONTACT TONY BRAYN (310) 526-1348</NTE02>
+      </NTE>
+      <NTE>
+        <NTE01>GEN</NTE01>
+        <NTE02>OR EMAIL tony@gmail.COM</NTE02>
+      </NTE>
+      <REF>
+        <!--Reference Identification Qualifier-->
+        <REF01>AN</REF01>
+        <!--Reference Identification-->
+        <REF02>547794</REF02>
+      </REF>
+      <PER>
+        <!--Contact Function Code-->
+        <PER01>BD<!--Buyer Name or Department--></PER01>
+        <!--Name-->
+        <PER02>JOHN JONES</PER02>
+        <!--Communication Number Qualifier-->
+        <PER03>TE<!--Telephone--></PER03>
+        <!--Communication Number-->
+        <PER04>5552225555</PER04>
+      </PER>
+      <Loop LoopId="N1" Name="Party">
+        <N1>
+          <!--Entity Identifier Code-->
+          <N101>BT</N101>
+          <!--Name-->
+          <N102>ACME DISTRIBUTING COMPANY</N102>
+        </N1>
+        <N3>
+          <!--Address Information-->
+          <N301>P.O. BOX 33327</N301>
+        </N3>
+        <N4>
+          <!--City Name-->
+          <N401>ANYTOWN</N401>
+          <!--State or Provice Code-->
+          <N402>NJ</N402>
+          <!--Postal Code-->
+          <N403>44509</N403>
+        </N4>
+      </Loop>
+      <Loop LoopId="N1" Name="Party">
+        <N1>
+          <!--Entity Identifier Code-->
+          <N101>ST</N101>
+          <!--Name-->
+          <N102>THE CORNER STORE</N102>
+        </N1>
+        <N3>
+          <!--Address Information-->
+          <N301>601 FIRST STREET</N301>
+        </N3>
+        <N4>
+          <!--City Name-->
+          <N401>CROSSROADS</N401>
+          <!--State or Provice Code-->
+          <N402>MI</N402>
+          <!--Postal Code-->
+          <N403>48106</N403>
+        </N4>
+      </Loop>
+      <Loop LoopId="N1" Name="Party">
+        <N1>
+          <!--Entity Identifier Code-->
+          <N101>VN</N101>
+          <!--Name-->
+          <N102>SMITH CORPORATION</N102>
+        </N1>
+        <N3>
+          <!--Address Information-->
+          <N301>900 EASY STREET</N301>
+        </N3>
+        <N4>
+          <!--City Name-->
+          <N401>BIG CITY</N401>
+          <!--State or Provice Code-->
+          <N402>NJ</N402>
+          <!--Postal Code-->
+          <N403>15455</N403>
+        </N4>
+      </Loop>
+      <ITD>
+        <ITD01>01</ITD01>
+        <ITD02>3</ITD02>
+        <ITD03>2</ITD03>
+        <ITD04 />
+        <ITD05>10</ITD05>
+      </ITD>
+      <DTM>
+        <!--Data/Time Qualifier-->
+        <DTM01>002</DTM01>
+        <!--Date-->
+        <DTM02>20030705</DTM02>
+      </DTM>
+      <DTM>
+        <!--Data/Time Qualifier-->
+        <DTM01>118</DTM01>
+        <!--Date-->
+        <DTM02>20030704</DTM02>
+      </DTM>
+      <FOB>
+        <FOB01>PB</FOB01>
+      </FOB>
+      <Loop LoopId="IT1" Name="ITEM">
+        <IT1>
+          <IT101 />
+          <!--Quantity Invoiced-->
+          <IT102>3</IT102>
+          <!--Unit or Basic for Measurement-->
+          <IT103>CA<!--Case--></IT103>
+          <!--Unit Price-->
+          <IT104>12.75</IT104>
+          <IT105 />
+          <!--Product/Service ID Qualifier-->
+          <IT106>VC</IT106>
+          <!--Product/Service ID-->
+          <IT107>6900</IT107>
+        </IT1>
+        <CTP>
+          <!--Class of Trade Code-->
+          <CTP01>RS</CTP01>
+          <!--Price Identifier Code-->
+          <CTP02>FCP</CTP02>
+          <!--Unit Price-->
+          <CTP03>12.5</CTP03>
+        </CTP>
+        <Loop LoopId="PID" Name="PRODUCT/ITEM">
+          <PID>
+            <PID01>F</PID01>
+            <PID02>08</PID02>
+            <PID03 />
+            <PID04 />
+            <PID05>ITEM DESCRIPTION 1/10 LB</PID05>
+          </PID>
+        </Loop>
+        <Loop LoopId="SAC" Name="Service, Promotion, Allowance, or Charge Information">
+          <SAC>
+            <!--Allowance or Charge Indicator-->
+            <SAC01>A</SAC01>
+            <!--Service, Promotion, Allowance or Charge Code-->
+            <SAC02>B280</SAC02>
+            <SAC03 />
+            <SAC04 />
+            <!--Amount-->
+            <SAC05>20.00</SAC05>
+            <SAC06 />
+            <SAC07 />
+            <!--Rate-->
+            <SAC08>2.00</SAC08>
+            <SAC09 />
+            <SAC10 />
+            <SAC11 />
+            <!--Allowance or Charge Method of Handling Code-->
+            <SAC12>02</SAC12>
+          </SAC>
+        </Loop>
+      </Loop>
+      <TDS>
+        <TDS01>5111</TDS01>
+        <TDS02 />
+      </TDS>
+      <CAD>
+        <CAD01>M</CAD01>
+        <CAD02 />
+        <CAD03 />
+        <CAD04 />
+        <CAD05>CONSOLIDATED TRUCK</CAD05>
+      </CAD>
+      <CTT>
+        <CTT01>1</CTT01>
+        <CTT02>20</CTT02>
+      </CTT>
+      <SE>
+        <!--Number of Included Segments-->
+        <SE01>1</SE01>
+        <!--Transaction Set Control Number-->
+        <SE02>0001</SE02>
+      </SE>
+    </Transaction>
+    <GE>
+      <!--Number of Transaction Sets Included-->
+      <GE01>1</GE01>
+      <!--Group Control Number-->
+      <GE02>1304</GE02>
+    </GE>
+  </FunctionGroup>
+  <IEA>
+    <!--Number of Included Functional Groups-->
+    <IEA01>1</IEA01>
+    <!--Interchange Control Number-->
+    <IEA02>000001403</IEA02>
+  </IEA>
+</Interchange>

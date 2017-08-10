@@ -1,0 +1,5 @@
+﻿<Execute sp="sp_TradingPartner_Configure">
+	<Parameters>
+		<Parameter name="@partner" value="" />
+	</Parameters>
+</Execute>

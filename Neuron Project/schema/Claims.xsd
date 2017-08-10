@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-16" ?>
+<xs:schema elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Claims">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="10000" name="Claim">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Agreement">
+								<xs:complexType>
+									<xs:sequence>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element minOccurs="0" name="ClaimID">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="36"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element minOccurs="0" name="ClaimTypeCode">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="3"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element minOccurs="0" name="ClaimDate">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Lines">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="10000" name="Line">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element minOccurs="0" name="LineNumber">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="6"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element minOccurs="0" name="LineAmt">
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="10"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

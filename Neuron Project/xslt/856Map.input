@@ -1,0 +1,478 @@
+﻿<Transaction ControlNumber="0001">
+  <ST>
+    <!--Transaction Set Identifier Code-->
+    <ST01>856</ST01>
+    <!--Transaction Set Control Number-->
+    <ST02>0001</ST02>
+  </ST>
+  <BSN>
+    <BSN01>00</BSN01>
+    <BSN02>110018</BSN02>
+    <BSN03>20130426</BSN03>
+    <BSN04>113147</BSN04>
+    <BSN05>0001</BSN05>
+  </BSN>
+  <CTT>
+    <CTT01>63</CTT01>
+  </CTT>
+  <HierarchicalLoop LoopId="HL" LoopName="Hierarchical Level" Id="1" ParentId="">
+    <HL>
+      <!--Hierarchical ID Number-->
+      <HL01>1</HL01>
+      <HL02 />
+      <!--Level Code-->
+      <HL03>S</HL03>
+    </HL>
+    <TD5>
+      <TD501>B</TD501>
+      <TD502>2</TD502>
+      <TD503>UNKN</TD503>
+      <TD504>P</TD504>
+    </TD5>
+    <REF>
+      <!--Reference Identification Qualifier-->
+      <REF01>BM</REF01>
+      <!--Reference Identification-->
+      <REF02>unknown</REF02>
+    </REF>
+    <DTM>
+      <!--Data/Time Qualifier-->
+      <DTM01>011<!--Shipped--></DTM01>
+      <!--Date-->
+      <DTM02>20130424</DTM02>
+    </DTM>
+    <Loop LoopId="N1" Name="Name">
+      <N1>
+        <!--Entity Identifier Code-->
+        <N101>SF<!--Ship From--></N101>
+        <!--Name-->
+        <N102>K&amp;S DENIM / NEESO JEANS</N102>
+      </N1>
+      <N3>
+        <!--Address Information-->
+        <N301>1407 BROADWAY</N301>
+        <!--Address Information-->
+        <N302>SUITE 1207</N302>
+      </N3>
+      <N4>
+        <!--City Name-->
+        <N401>NEW YORK</N401>
+        <!--State or Provice Code-->
+        <N402>NY</N402>
+        <!--Postal Code-->
+        <N403>10018</N403>
+        <!--Country Code-->
+        <N404>US</N404>
+      </N4>
+    </Loop>
+    <Loop LoopId="N1" Name="Name">
+      <N1>
+        <!--Entity Identifier Code-->
+        <N101>ST</N101>
+        <!--Name-->
+        <N102>EDGEWATER PARK, NJ DC</N102>
+        <!--Identification Code Qualifier-->
+        <N103>92<!--Assigned by Buyer or Buyer's Agent--></N103>
+        <!--Identification Code-->
+        <N104>053</N104>
+      </N1>
+      <N3>
+        <!--Address Information-->
+        <N301>4287 COOPER STREET &amp; ROUTE 130 SOUTH</N301>
+        <!--Address Information-->
+        <N302>CENTRAL DISTRIBUTION/CORPORATE OFFICES</N302>
+      </N3>
+      <N4>
+        <!--City Name-->
+        <N401>EDGEWATER PARK</N401>
+        <!--State or Provice Code-->
+        <N402>NJ</N402>
+        <!--Postal Code-->
+        <N403>08010</N403>
+        <!--Country Code-->
+        <N404>US</N404>
+      </N4>
+    </Loop>
+    <HierarchicalLoop LoopId="HL" LoopName="Hierarchical Level" Id="2" ParentId="1">
+      <HL>
+        <!--Hierarchical ID Number-->
+        <HL01>2</HL01>
+        <!--Hierarchical Parent ID Number-->
+        <HL02>1</HL02>
+        <!--Level Code-->
+        <HL03>O</HL03>
+      </HL>
+      <PRF>
+        <PRF01>230419904</PRF01>
+      </PRF>
+      <TD1>
+        <TD101>CTN25</TD101>
+        <TD102>15</TD102>
+        <TD103 />
+        <TD104 />
+        <TD105 />
+        <TD106>G</TD106>
+        <TD107>410.0</TD107>
+        <TD108>LB</TD108>
+      </TD1>
+      <Loop LoopId="N1" Name="Name">
+        <N1>
+          <!--Entity Identifier Code-->
+          <N101>BY<!--Buying Party (Purchaser)--></N101>
+          <!--Name-->
+          <N102>EDGEWATER PARK, NJ DC</N102>
+          <!--Identification Code Qualifier-->
+          <N103>92<!--Assigned by Buyer or Buyer's Agent--></N103>
+          <!--Identification Code-->
+          <N104>053</N104>
+        </N1>
+        <N3>
+          <!--Address Information-->
+          <N301>4287 COOPER STREET &amp; ROUTE 130 SOUTH</N301>
+          <!--Address Information-->
+          <N302>CENTRAL DISTRIBUTION/CORPORATE OFFICES</N302>
+        </N3>
+        <N4>
+          <!--City Name-->
+          <N401>EDGEWATER PARK</N401>
+          <!--State or Provice Code-->
+          <N402>NJ</N402>
+          <!--Postal Code-->
+          <N403>08010</N403>
+          <!--Country Code-->
+          <N404>US</N404>
+        </N4>
+      </Loop>
+      <HierarchicalLoop LoopId="HL" LoopName="Hierarchical Level" Id="3" ParentId="2">
+        <HL>
+          <!--Hierarchical ID Number-->
+          <HL01>3</HL01>
+          <!--Hierarchical Parent ID Number-->
+          <HL02>2</HL02>
+          <!--Level Code-->
+          <HL03>P</HL03>
+        </HL>
+        <MAN>
+          <MAN01>GM</MAN01>
+          <MAN02>00308863320088917167</MAN02>
+        </MAN>
+        <HierarchicalLoop LoopId="HL" LoopName="Hierarchical Level" Id="4" ParentId="3">
+          <HL>
+            <!--Hierarchical ID Number-->
+            <HL01>4</HL01>
+            <!--Hierarchical Parent ID Number-->
+            <HL02>3</HL02>
+            <!--Level Code-->
+            <HL03>I</HL03>
+          </HL>
+          <LIN>
+            <LIN01 />
+            <!--Product/Service ID Quailifier-->
+            <LIN02>IN</LIN02>
+            <!--Product/Service ID-->
+            <LIN03>PO2304199LN4</LIN03>
+          </LIN>
+          <SN1>
+            <SN101 />
+            <SN102>2</SN102>
+            <SN103>AS</SN103>
+          </SN1>
+          <SLN>
+            <SLN01>1</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>1</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975558</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>3</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>2</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975561</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>5</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>3</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975613</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>7</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>4</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975626</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>9</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>5</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975671</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>11</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>6</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975749</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>13</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>7</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>1</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975859</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>15</SLN16>
+          </SLN>
+        </HierarchicalLoop>
+      </HierarchicalLoop>
+      <HierarchicalLoop LoopId="HL" LoopName="Hierarchical Level" Id="5" ParentId="2">
+        <HL>
+          <!--Hierarchical ID Number-->
+          <HL01>5</HL01>
+          <!--Hierarchical Parent ID Number-->
+          <HL02>2</HL02>
+          <!--Level Code-->
+          <HL03>P</HL03>
+        </HL>
+        <MAN>
+          <MAN01>GM</MAN01>
+          <MAN02>00308863320088917143</MAN02>
+        </MAN>
+        <HierarchicalLoop LoopId="HL" LoopName="Hierarchical Level" Id="6" ParentId="5">
+          <HL>
+            <!--Hierarchical ID Number-->
+            <HL01>6</HL01>
+            <!--Hierarchical Parent ID Number-->
+            <HL02>5</HL02>
+            <!--Level Code-->
+            <HL03>I</HL03>
+          </HL>
+          <LIN>
+            <LIN01 />
+            <!--Product/Service ID Quailifier-->
+            <LIN02>IN</LIN02>
+            <!--Product/Service ID-->
+            <LIN03>PO2304199LN4</LIN03>
+          </LIN>
+          <SN1>
+            <SN101 />
+            <SN102>2</SN102>
+            <SN103>AS</SN103>
+          </SN1>
+          <SLN>
+            <SLN01>1</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>1</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975558</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>3</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>2</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975561</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>5</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>3</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975613</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>7</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>4</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975626</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>9</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>5</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975671</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>11</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>6</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>2</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975749</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>13</SLN16>
+          </SLN>
+          <SLN>
+            <SLN01>7</SLN01>
+            <SLN02 />
+            <SLN03>I</SLN03>
+            <SLN04>1</SLN04>
+            <SLN05>EA</SLN05>
+            <SLN06 />
+            <SLN07 />
+            <SLN08 />
+            <SLN09>IN</SLN09>
+            <SLN10>56975859</SLN10>
+            <SLN11>IT</SLN11>
+            <SLN12>PJL21W</SLN12>
+            <SLN13>BO</SLN13>
+            <SLN14>DENIM</SLN14>
+            <SLN15>IZ</SLN15>
+            <SLN16>15</SLN16>
+          </SLN>
+        </HierarchicalLoop>
+      </HierarchicalLoop>
+    </HierarchicalLoop>
+  </HierarchicalLoop>
+  <SE>
+    <!--Number of Included Segments-->
+    <SE01>1</SE01>
+    <!--Transaction Set Control Number-->
+    <SE02>0001                                                                                                            </SE02>
+  </SE>
+</Transaction>
