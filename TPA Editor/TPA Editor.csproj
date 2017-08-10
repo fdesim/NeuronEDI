@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3763E4E8-7489-41B6-9728-2570F97A7238}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TPA_Editor</RootNamespace>
+    <AssemblyName>TPA Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3767B322FEDCA8310A4989455AB56853E4438749</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TPA Editor_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewGroup.Designer.cs">
+      <DependentUpon>AddNewGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgreementCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgreementCreate.Designer.cs">
+      <DependentUpon>AgreementCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgreementTestWithTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgreementTestWithTabs.Designer.cs">
+      <DependentUpon>AgreementTestWithTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgreementUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgreementUpdate.Designer.cs">
+      <DependentUpon>AgreementUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NeuronEDIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NeuronEDIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NeuronEDIDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NeuronEDIDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NeuronEDIDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NeuronEDIDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NeuronEDIDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NeuronEDIDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Trading Partner Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trading Partner Create.Designer.cs">
+      <DependentUpon>Trading Partner Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trading Partner Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trading Partner Update.Designer.cs">
+      <DependentUpon>Trading Partner Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewGroup.resx">
+      <DependentUpon>AddNewGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgreementCreate.resx">
+      <DependentUpon>AgreementCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgreementTestWithTabs.resx">
+      <DependentUpon>AgreementTestWithTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgreementUpdate.resx">
+      <DependentUpon>AgreementUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trading Partner Create.resx">
+      <DependentUpon>Trading Partner Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Trading Partner Update.resx">
+      <DependentUpon>Trading Partner Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NeuronEDIDataSet.xsc">
+      <DependentUpon>NeuronEDIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NeuronEDIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NeuronEDIDataSet.xss">
+      <DependentUpon>NeuronEDIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet11.xsc">
+      <DependentUpon>NeuronEDIDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NeuronEDIDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NeuronEDIDataSet11.xss">
+      <DependentUpon>NeuronEDIDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet2.xsc">
+      <DependentUpon>NeuronEDIDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NeuronEDIDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NeuronEDIDataSet2.xss">
+      <DependentUpon>NeuronEDIDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet3.xsc">
+      <DependentUpon>NeuronEDIDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NeuronEDIDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NeuronEDIDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NeuronEDIDataSet3.xss">
+      <DependentUpon>NeuronEDIDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TPA Editor_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Agreements>
+  <Agreement>
+    <Action>Create</Action>
+    <Name>Capital One Bank To National Tire and Bateery 835 5010</Name>
+    <TransactionType>835</TransactionType>
+    <Direction>Inbound</Direction>
+    <Activated>0</Activated>
+    <AuthorizationInformationQualifier>00</AuthorizationInformationQualifier>
+    <AuthorizationInformation></AuthorizationInformation>
+    <SecurityInformationQualifier>00</SecurityInformationQualifier>
+    <SecurityInformation></SecurityInformation>
+    <Partner Type="Sender">
+      <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+      <InterchangeID>CB3986547292818</InterchangeID>
+      <FunctionalGroupID>CB3986547292818</FunctionalGroupID>
+    </Partner>
+    <Partner Type="Receiver">
+      <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+      <InterchangeID>NTB293847291033</InterchangeID>
+      <FunctionalGroupID>NTBN29394827186</FunctionalGroupID>
+    </Partner>
+    <InterchangeStandardsID>U</InterchangeStandardsID>
+    <InterchangeVersionID>00501</InterchangeVersionID>
+    <InterchangeControlNumber></InterchangeControlNumber>
+    <AckRequested>0</AckRequested>
+    <TestIndicator>T</TestIndicator>
+    <SegmentSeparator>~</SegmentSeparator>
+    <ElementSeparator>*</ElementSeparator>
+    <SubElementSeparator>:</SubElementSeparator>
+    <FunctionalIDCode>HP</FunctionalIDCode>
+    <ApplicationSenderID>CB3986547292818</ApplicationSenderID>
+    <ApplicationReceiverID>NTB293847291033</ApplicationReceiverID>
+    <GroupControlNumber></GroupControlNumber>
+    <ResponsibleAgencyCode>X</ResponsibleAgencyCode>
+    <VersionReleaseIndustryIDCode>00501</VersionReleaseIndustryIDCode>
+    <GroupControlNumber></GroupControlNumber>
+  </Agreement>
+</Agreements>

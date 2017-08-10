@@ -1,0 +1,63 @@
+﻿<Partners>
+  <Partner>
+    <Action>Create</Action>
+    <Name>United Healthcare</Name>
+    <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+    <InterchangeID>UHC293847291033</InterchangeID>
+    <Activated>0</Activated>
+    <FunctionalGroups>
+      <FunctionalGroup>
+        <Action>Create</Action>
+        <FunctionalGroupID>UHC293847291033</FunctionalGroupID>
+        <Activated>0</Activated>
+      </FunctionalGroup>
+    </FunctionalGroups>
+  </Partner>
+  <Partner>
+    <Action>Create</Action>
+    <Name>Cigna Healthcare</Name>
+    <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+    <InterchangeID>CIG887201928374</InterchangeID>
+    <Activated>0</Activated>
+    <FunctionalGroups>
+      <FunctionalGroup>
+        <Action>Create</Action>
+        <FunctionalGroupID>CIG887201928374</FunctionalGroupID>
+        <Activated>0</Activated>
+      </FunctionalGroup>
+    </FunctionalGroups>
+  </Partner>
+  <Partner>
+    <Action>Create</Action>
+    <Name>Blue Cross and Blue Shield</Name>
+    <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+    <InterchangeID>BCBS33946152938</InterchangeID>
+    <Activated>0</Activated>
+    <FunctionalGroups>
+      <FunctionalGroup>
+        <Action>Create</Action>
+        <FunctionalGroupID>BCBS33946152938</FunctionalGroupID>
+        <Activated>0</Activated>
+      </FunctionalGroup>
+      <FunctionalGroup>
+        <Action>Create</Action>
+        <FunctionalGroupID>BCBSTX937862519</FunctionalGroupID>
+        <Activated>0</Activated>
+      </FunctionalGroup>
+    </FunctionalGroups>
+  </Partner>
+  <Partner>
+    <Action>Create</Action>
+    <Name>Chase Bank</Name>
+    <InterchangeIDQualifier>ZZ</InterchangeIDQualifier>
+    <InterchangeID>CHB002835417283</InterchangeID>
+    <Activated>0</Activated>
+    <FunctionalGroups>
+      <FunctionalGroup>
+        <Action>Create</Action>
+        <FunctionalGroupID>CHB002835417283</FunctionalGroupID>
+        <Activated>0</Activated>
+      </FunctionalGroup>
+    </FunctionalGroups>
+  </Partner>
+</Partners>
